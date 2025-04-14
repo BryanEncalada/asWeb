@@ -1,76 +1,71 @@
-.footer-container {
-    background: linear-gradient(to right, #000, #0a0a1a);
-    color: white;
-    padding: 2rem;
-    font-family: 'Arial', sans-serif;
-  
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  
-      .footer-column {
-        flex: 1;
-        margin: 1rem;
-  
-        h3 {
-          font-weight: bold;
-          margin-bottom: 1rem;
+.footer {
+  background: linear-gradient(to right, #000000 0%, #0c0f17 100%);
+  color: white;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 300;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.6rem;
+          font-size: 1rem;
         }
-  
-        ul {
-          list-style: none;
-          padding: 0;
-  
-          li {
-            margin: 0.5rem 0;
-  
-            a {
-              color: white;
-              text-decoration: none;
-              transition: color 0.3s;
-  
-              &:hover {
-                color: #1e90ff;
-              }
-            }
-          }
-        }
-  
-        .social-icons a {
-          color: white;
-          margin-right: 1rem;
-          font-size: 1.5rem;
-  
-          &:hover {
-            color: #1e90ff;
-          }
-        }
-  
-        p {
-          margin: 0.5rem 0;
-        }
-  
+      }
+
+      .icons {
+        margin: 10px 0;
+
         i {
-          margin-right: 0.5rem;
+          font-size: 1.5rem;
+          margin-right: 10px;
         }
       }
-    }
-  
-    .footer-logo {
-      display: flex;
-      align-items: center;
-      margin-top: 2rem;
-  
-      img {
-        height: 50px;
-        margin-right: 1rem;
-      }
-  
-      .logo-text {
-        font-size: 0.9rem;
-        line-height: 1.2;
+
+      .contact-info p {
+        margin: 5px 0;
+        font-size: 0.95rem;
+
+        i {
+          margin-right: 8px;
+        }
       }
     }
   }
-  
+
+  .footer-bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    .logo {
+      height: 40px;
+    }
+
+    .logo-text {
+      p {
+        margin: 0;
+        font-size: 0.85rem;
+        line-height: 1.1;
+      }
+    }
+  }
+}
