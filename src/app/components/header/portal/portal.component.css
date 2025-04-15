@@ -1,38 +1,63 @@
+@font-face {
+  font-family: 'Kallisto_bold';
+  src: url('../../../../assets/fonts/fonnts.com-Kallisto_Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Apparat_Regular';
+  src: url('../../../../assets/fonts/fonnts.com-Apparat_Regular.otf') format('opentype');
+}
+
 .hero-container {
-  position: relative;
-  width: 100%;
+
   height: 100vh;
   background: url('../../../../../public/images/header/Recurso_20.webp') no-repeat center center / cover;
   display: flex;
   align-items: center;
   padding-left: 360px;
-  box-sizing: border-box;
-  overflow: hidden;
+
+}
+
+.hero-container::after {
+
+  height: 100vh;
+  content: '';
+  position: absolute;
+  top: 78px;
+  left: 7px;
+  right: 7px;
+  bottom: 0;
+  align-items: center;
+  background-color: rgba(192, 186, 186, 0.882);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+   /*border: 5px solid #4b23ce;*/
+
 }
 
 .hero-text {
-  position: relative;
   z-index: 2;
   max-width: 500px;
   color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Kallisto_bold', sans-serif;
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 50pt;
     margin: 0;
-
-    .line {
-      display: inline;
-    }
-
-    .bold {
-      font-weight: bold;
-    }
   }
 
   p {
     margin-top: 20px;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-family: 'Apparat_Regular', sans-serif;
+    font-size: 19pt;
+    font-weight: normal;
+    width: 650px;
+    margin: 10;
+    padding: 0;
+    text-align: justify;
+    text-align-last: justify;
+    /* fuerza la última línea también */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
