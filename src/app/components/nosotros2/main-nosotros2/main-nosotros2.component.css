@@ -1,0 +1,8 @@
+.contenedor-principal {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: url('../../../../../public/images/nosotros2/Recurso_50.webp') no-repeat center center / cover;
+}
