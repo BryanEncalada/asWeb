@@ -1,0 +1,46 @@
+
+.contenido {
+  position: relative;
+  z-index: 1;
+  padding: 80px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.metricas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.metrica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numero {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #facc15; /* Amarillo */
+}
+
+.descripcion {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+
+
