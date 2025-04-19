@@ -16,19 +16,18 @@
   }
   
   .section-1 {
-    background-image: url('assets/imgs/fondo1.jpg');
-  }
+    background-image: url('../../../assets/images/footer/fondoDegrade.webp');    }
   
   .section-2 {
-    background-image: url('assets/imgs/fondo2.jpg');
+    background-image: url('../../../assets/images/footer/fondoDegrade.webp');  
   }
   
   .section-3 {
-    background-image: url('assets/imgs/fondo3.jpg');
+    background-image: url('../../../assets/images/footer/fondoDegrade.webp');  
   }
   
   .section-4 {
-    background-image: url('assets/imgs/fondo4.jpg');
+    background-image: url('../../../assets/images/footer/fondoDegrade.webp');  
   }
   
   .overlay {
