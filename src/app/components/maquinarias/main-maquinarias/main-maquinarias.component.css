@@ -1,0 +1,108 @@
+.maquinaria-layout {
+  display: flex;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+}
+
+.maquinaria-layout::after {
+
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  align-items: center;
+  background-color: rgba(192, 186, 186, 0.882);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+   /*border: 5px solid #4b23ce;*/
+
+}
+
+/* Imagen lado izquierdo */
+.imagen-container {
+  position: relative;
+  width: 70%;
+  height: 100%;
+
+  background-image: url('../../../../../public/images/maquinarias/Recurso_30Maq.webp');
+  background-size: cover;       /* Escala la imagen para cubrir todo el div */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  border-radius: 20px; /* 🎯 Bordes curvos */
+  overflow: hidden;
+  margin: 15px;
+}
+
+
+
+/* Franjas de colores */
+.franjas-colores {
+  display: flex;
+  width: 30%;
+
+}
+
+.franja {
+  flex: 1;
+
+}
+
+.naranja {
+  background-color: #f90;
+}
+
+.gris {
+  background-color: #e3e3e3;
+}
+
+.azul {
+  background-color: #030f44;
+}
+
+
+.contenedor-maquinaria {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 80vh; /* Ocupa toda la pantalla */
+  padding: 2rem;
+  box-sizing: border-box;
+
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  gap: 2rem;
+  border: 0px solid;
+}
+
+
+.icono {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.textoMaq {
+  color: white;
+  font-weight: bold;
+}
+
+.tituloMaq {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.descripcionMaq {
+  font-size: 1.5rem;
+  line-height: 1.0;
+  text-align: justify;
+}

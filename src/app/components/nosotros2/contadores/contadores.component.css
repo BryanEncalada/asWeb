@@ -33,10 +33,8 @@
   /* bordes redondeados */
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-right: 50px;
   padding-left: 50px;
-  justify-content: center;
 
 }
 
@@ -46,9 +44,23 @@
   display: flex;
   align-items: center;      /* centra verticalmente */
   font-family: 'Apparat_Regular', sans-serif;
-  font-size: 40px;
+  font-size: 100px;
   font-weight: bold;
   color: white;
   line-height: 1.5;
 
 }
+
+.letra {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  font-family: 'Apparat_Regular', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+
+}
+
