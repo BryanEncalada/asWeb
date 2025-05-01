@@ -4,7 +4,6 @@
 }
 
 .contenido {
-  position: relative;
   padding: 50px 20px 40px;
   display: flex;
   flex-direction: column;
@@ -20,34 +19,29 @@
 }
 
 .metricas {
+
+
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;   /* Centra las columnas horizontalmente */
+  width: 80%;        /* Opcional: para que ocupe toda la altura de la pantalla */
+  box-sizing: border-box;
+
+
 }
 
 .metrica {
-  border: 0px red solid;
+
   background-color: rgba(255, 255, 255, 0.2);
   /* blanco translúcido */
   border-radius: 30px;
   /* bordes redondeados */
-  display: flex;
-  flex-direction: column;
-  padding-right: 50px;
-  padding-left: 50px;
-
-}
-
-.numero {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;      /* centra verticalmente */
-  font-family: 'Apparat_Regular', sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  color: white;
-  line-height: 1.5;
+  flex: 0 0 30%;             /* Aproximadamente 3 columnas con espacio */
+  max-width: 30%;
+  margin: 1%;                /* Espaciado entre columnas */
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
 
 }
 
@@ -64,3 +58,17 @@
 
 }
 
+/* Adaptación a móviles: 1 columna */
+@media (max-width: 767px) {
+
+  .metricas {
+    width: 100%;
+  }
+
+  .metrica {
+
+    flex: 0 0 100%;
+    max-width: 100%;
+
+  }
+}

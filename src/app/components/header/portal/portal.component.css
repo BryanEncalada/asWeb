@@ -8,30 +8,33 @@
   src: url('../../../../assets/fonts/fonnts.com-Apparat_Regular.otf') format('opentype');
 }
 
-.hero-container {
 
-  height: 100vh;
-  background: url('../../../../../public/images/header/Recurso_20.webp') no-repeat center center / cover;
+.contenedor-principal {
   display: flex;
-  align-items: center;
-  padding-left: 360px;
-
+  align-items: stretch;
+  /* Asegura que ambas columnas tengan el mismo alto */
+  justify-content: flex-start;
+  width: 100%;
+  height: 90vh;
+  /* Altura del contenedor (puedes ajustarla o usar 100vh) */
+  background-color: #f0f0f0;
+  padding-left: 13%;
+  box-sizing: border-box;
+  background: url('../../../../../public/images/header/Recurso_20.webp') no-repeat center center / cover;
 }
 
-.hero-container::after {
+.imgFlecha {
+  width: 100%;
+ }
 
-  height: 100vh;
-  content: '';
-  position: absolute;
-  top: 78px;
-  left: 7px;
-  right: 7px;
-  bottom: 0;
-  align-items: center;
-  background-color: rgba(192, 186, 186, 0.882);
-  mix-blend-mode: multiply;
-  opacity: 0.9;
-   /*border: 5px solid #4b23ce;*/
+.columna {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border: 0px solid;
+  box-sizing: border-box;
 
 }
 
@@ -60,4 +63,45 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+}
+
+
+@media (max-width: 767px) {
+
+  .contenedor-principal {
+
+    padding-left: 0%;
+
+  }
+
+  .imgFlecha {
+    margin: 10px;
+    width: 40px;
+   }
+
+  .hero-text {
+    z-index: 2;
+    color: white;
+    font-family: 'Kallisto_bold', sans-serif;
+
+    h1 {
+      font-size: 25pt;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: 'Apparat_Regular', sans-serif;
+      font-size: 19pt;
+      font-weight: normal;
+      width: 200px;
+      padding: 0;
+      text-align: justify;
+      text-align-last: justify;
+      /* fuerza la última línea también */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+
 }

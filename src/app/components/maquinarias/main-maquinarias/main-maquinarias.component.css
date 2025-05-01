@@ -8,21 +8,7 @@
   background-color: black;
 }
 
-.maquinaria-layout::after {
 
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0;
-  align-items: center;
-  background-color: rgba(192, 186, 186, 0.882);
-  mix-blend-mode: multiply;
-  opacity: 0.9;
-   /*border: 5px solid #4b23ce;*/
-
-}
 
 /* Imagen lado izquierdo */
 .imagen-container {
@@ -53,41 +39,29 @@
 
 }
 
-.naranja {
-  background-color: #f90;
+.mostaza {
+  background-color: #D6A600;
 }
 
-.gris {
-  background-color: #e3e3e3;
+.negro {
+  background-color: #000000;
 }
 
 .azul {
-  background-color: #030f44;
+  background-color: #051c82;
 }
 
-
-.contenedor-maquinaria {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  height: 80vh; /* Ocupa toda la pantalla */
-  padding: 2rem;
-  box-sizing: border-box;
-
+.celeste {
+  background-color: #3BAFE1;
 }
 
-.contenido {
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  gap: 2rem;
-  border: 0px solid;
-}
+/* ================================================== */
+/* ================================================== */
 
 
 .icono {
+
   width: 50%;
-  height: 50%;
   object-fit: cover;
 }
 
@@ -105,4 +79,76 @@
   font-size: 1.5rem;
   line-height: 1.0;
   text-align: justify;
+}
+
+
+/* ================================================== */
+/* ================================================== */
+
+
+.contenedor-principal {
+  display: flex;         /* Activa Flexbox en el contenedor */
+  width: 100%;
+  height: 90vh; /* Ocupa toda la pantalla */
+
+}
+
+.caja {
+  flex: 1;               /* Ambos contenedores toman el mismo ancho */
+  display: flex;
+  flex-direction: column;        /* Activa Flexbox dentro de cada caja */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  /* border: 1px solid red;   Centra el contenido verticalmente */
+}
+
+.derecha {
+  align-items: flex-end;  /* alinea el contenido al lado derecho */
+  justify-content: center; /* alinea verticalmente al centro */
+}
+
+.izquierda {
+  padding-left: 5%;
+}
+
+
+/* ================================================== */
+/* ================================================== */
+
+/* Imagen central entre secciones */
+.imagen-centro {
+  position: absolute;
+  top: 50%;
+  left: 67.5%;
+  z-index: 4;
+}
+
+.imagen-centro img {
+  width: 80px;
+  /* ajusta según tamaño deseado */
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 767px) {
+  .franjas-colores {
+    display: none;
+  }
+
+  .icono{
+    display: none;
+  }
+
+  .imagen-container{
+    width: 100%;
+  }
+
+  .derecha{
+    display: none;
+  }
+
+  .imagen-centro{
+    display: none;
+  }
+
 }
