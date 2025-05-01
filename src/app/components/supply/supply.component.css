@@ -6,6 +6,8 @@
 
     
   }
+
+
   
   .image-wrapper {
     max-width: 100%;
@@ -83,10 +85,12 @@
 
    /* ///////////  */
 
-  .banner-arrows {
 
-    z-index: -1;
+  .banner-arrows {
+    width: 100%;
+    display: flex;
   }
+
   
   .banner-arrows img {
     max-width: 70%;
@@ -125,3 +129,14 @@
       }
     }
     
+
+
+/* Banner de la izquierda: pegado a la derecha */
+.left-column .banner-arrows {
+  margin-left: auto;
+}
+
+/* Banner de la derecha: pegado a la izquierda */
+.right-column .banner-arrows {
+  margin-right: auto;
+}
