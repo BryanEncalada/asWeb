@@ -3,49 +3,57 @@
   src: url('../../../../assets/fonts/fonnts.com-Kallisto_Bold.otf') format('opentype');
 }
 
-
-
 .banner-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-image: url('../../../../assets/images/footer/fondoDegrade.webp');  
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .banner-logo {
-    max-width: 60%;
-    height: 70%;
-    /* opacity: 0.2; */
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    z-index: 1;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url('../../../../assets/images/footer/fondoDegrade.webp');  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-logo {
+  max-width: 60%;
+  height: 70%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  z-index: 1;
+}
+
+.banner-text {
+  font-size: 2rem; /* Tamaño por defecto más moderado */
+  font-family: 'Kallisto_bold', sans-serif;
+  color: white;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+/* 📱 En móviles: texto más pequeño */
+@media (max-width: 767px) {
   .banner-text {
-    font-size: 4.16rem;
-   
-    font-family: 'Kallisto_bold', sans-serif;
-    color: white;
-    z-index: 2;
-    padding: 0 1rem;
+    font-size: 1.4rem;
   }
-  
-  @media (min-width: 768px) {
-    .banner-text {
-      font-size: 2rem;
-    }
-  
-    .banner-logo {
-      max-width: 40%;
-    }
+
+  .banner-logo {
+    max-width: 50%;
+    height: auto;
   }
-  
+}
+
+/* 🖥️ En pantallas grandes: tamaño amplio */
+@media (min-width: 1024px) {
+  .banner-text {
+    font-size: 3rem;
+  }
+
+  .banner-logo {
+    max-width: 35%;
+  }
+}
