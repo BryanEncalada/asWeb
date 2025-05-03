@@ -40,19 +40,19 @@
 }
 
 .mostaza {
-  background-color: #D6A600;
+  background-color: var(--mostaza-color);
 }
 
 .negro {
-  background-color: #000000;
+  background-color: var(--negro-color);
 }
 
 .azul {
-  background-color: #051c82;
+  background-color: var(--azul-color);
 }
 
 .celeste {
-  background-color: #3BAFE1;
+  background-color: var(--celeste-color);
 }
 
 /* ================================================== */
