@@ -3,6 +3,7 @@
     --mostaza-color: #D6A600;
     --negro-color: #000000;
     --celeste-color: #3BAFE1;
+    --azul-letra-color:#1074b8;
 }
 
 
@@ -15,3 +16,11 @@
     font-family: 'Kallisto_ligth';
     src: url('assets/fonts/fonnts.com-Kallisto_Light.otf') format('opentype');
   }
+
+
+  @font-face {
+    font-family: 'ApparatSemiCond';
+    src: url('assets/fonts/fonnts.com-ApparatSemiCond_Heavy.otf') format('opentype');
+  }
+
+
