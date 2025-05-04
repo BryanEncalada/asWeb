@@ -1,142 +1,91 @@
-.section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-
-    
-  }
-
-
-  
-  .image-wrapper {
-    max-width: 100%;
-  }
-  
-  .drill-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-  }
-  
-  .cta-button {
-    margin-top: 1rem;
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    border: none;
-    
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-   
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s ease;
-
-    padding: 3px 10px; /* más grande que 10px 20px */
-    font-size: 0.8rem;  /* más grande que 0.9rem */
-  
-  }
-  
-  .cta-button:hover {
-    background-color: #005dc1;
-  }
-  
-  .play-icon {
-    font-size: 1rem;
-  }
-  
-
- /* ///////////  */
-
- .text-section {
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .page-container {
-    
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
-  
-  .main-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #0072ce;
-    font-weight: bold;
-    line-height: 1.3;
-    text-transform: uppercase;
-  }
-  
-  .description-box {
-    background: linear-gradient(to right, #b5b3ff, #000000);
-    color: white;
-    padding: 1.5rem;
-    font-size: 0.95rem;
-
-
-  }
-
-   /* ///////////  */
-
-
-  .banner-arrows {
-    width: 100%;
-    display: flex;
-  }
-
-  
-  .banner-arrows img {
-    max-width: 70%;
-    height: auto;
-  }
-     /* ///////////  */
-     .layout-wrapper {
-    
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 0;
-      flex-wrap: wrap;
-      position: relative;
-      top: 50%;
-   
-
-    }
-    
-    .left-column, .right-column {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      flex: 0 0 40%; /* se adaptan al ancho disponible */
-    }
-    
-    @media (max-width: 768px) {
-      .layout-wrapper {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .left-column, .right-column {
-        width: 100%;
-      }
-    }
-    
-
-
-/* Banner de la izquierda: pegado a la derecha */
-.left-column .banner-arrows {
-  margin-left: auto;
+.contenido-wrapper {
+  width: 100%;
+  max-width: 1200px; 
+  height: 400px;
+  padding-top: 250px;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Banner de la derecha: pegado a la izquierda */
-.right-column .banner-arrows {
-  margin-right: auto;
+.franja-container {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  background: linear-gradient(to right, #6b28a9, #000000);
+  height: 150px;
+  padding: 0 3rem;
+  position: relative;
+  overflow: visible;
+}
+
+.franja-img {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+
+}
+
+
+.franja-img img {
+  height: 380px;
+  object-fit: contain;  
+  margin-right: 80px; /* <-- Ajusta este valor según lo que necesites */
+}
+
+
+
+.franja-texto {
+  flex: 1;
+  max-width: 600px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  padding-right: 2rem;
+  z-index: 1;
+ color:white;
+ font-family: 'Kallisto_ligth', sans-serif;
+}
+
+.icono-flecha {
+  position: absolute;
+  bottom: -180px; /* lo coloca debajo de la franja */
+  left: 53%;   
+  z-index: 3;
+}
+
+.icono-flecha img {
+  width: 450px;
+  height: auto;
+}
+
+
+.icono-superior {
+  position: absolute;
+  top: -130px; /* o 0, o ajusta según lo que necesites */
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.icono-superior img {
+  width: 450px; /* ajusta el tamaño según el diseño */
+  height: auto;
+}
+
+.texto-superior-derecha {
+  position: absolute;
+  top: 40px; 
+  right: 2rem; 
+  max-width: 700px;
+  text-align: right;
+  color:var(--azul-letra-color);
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-family: 'Kallisto_ligth', sans-serif;
+  z-index: 4;
 }
