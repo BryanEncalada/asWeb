@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 2rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #1f5c94;
   position: relative;
 }
@@ -14,7 +16,7 @@
 }
 
 .navbar .logo img {
-  height: 40px;
+  height: 60px;
 }
 
 .navbar .menu-toggle {
@@ -47,9 +49,9 @@
   box-shadow: 2px 2px 5px #000;
   border-radius: 10px;
   transition: background-color 0.3s;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Kallisto_ligth', sans-serif;
   /* Tipo de letra */
-  font-size: 12px;
+  font-size: 16px;
   /* Tamaño de la letra */
 }
 
