@@ -1,0 +1,30 @@
+<!-- productos.component.html -->
+<div class="contenedor-productos">
+
+  <div class="seccion-superior">
+    <img style="margin: 15px;" src="images/productos/Recurso120.webp" alt="producto" />
+  </div>
+
+  <div class="subcontenedor-central">
+    <!-- Sección 1: Íconos -->
+    <div class="seccion-iconos">
+      <img *ngFor="let icono of iconos" [src]="icono" class="icono" />
+    </div>
+
+    <!-- Sección 2: Lista de productos -->
+    <div class="seccion-textos">
+      <ul class="lista-productos">
+        <li *ngFor="let producto of productos">{{ producto }}</li>
+      </ul>
+    </div>
+
+    <!-- Sección 3: Imagen de grúa -->
+    <div class="seccion-imagen">
+      <div class="grua-con-overlay">
+        <img src="images/productos/Recurso119.webp" alt="grúa" class="grua-img" />
+        <img src="images/productos/Recurso117.webp" alt="icono decorativo" class="icono-sobre-grua" />
+      </div>
+    </div>
+
+  </div>
+</div>
