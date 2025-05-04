@@ -7,13 +7,19 @@
 .columna {
   flex: 0 0 12.5%; /* 100 / 8 columnas */
   box-sizing: border-box;
-  padding: 10px;
-
+  padding-top: 25px;
+  padding-bottom: 20px;
   display: flex;
   text-align: center;
   justify-content: center; /* centra horizontalmente */
   align-items: center;     /* centra verticalmente */
   background-color: black;
+
+  img{
+    width: 50%;
+
+  }
+
 }
 
 /* Para móviles: 4 columnas */

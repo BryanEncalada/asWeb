@@ -4,10 +4,11 @@
 }
 
 .contenido {
-  padding: 50px 20px 40px;
+  padding: 50px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 
 }
 
@@ -19,15 +20,11 @@
 }
 
 .metricas {
-
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;   /* Centra las columnas horizontalmente */
   width: 80%;        /* Opcional: para que ocupe toda la altura de la pantalla */
   box-sizing: border-box;
-
-
 }
 
 .metrica {
@@ -56,6 +53,10 @@
   color: white;
   line-height: 1.2;
 
+}
+
+.cadenaimg{
+  border: 0px solid red;
 }
 
 /* Adaptación a móviles: 1 columna */
