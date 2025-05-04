@@ -89,3 +89,31 @@
   font-family: 'Kallisto_ligth', sans-serif;
   z-index: 4;
 }
+
+
+@media (max-width: 768px) {
+  .texto-superior-derecha,
+  .franja-img,
+  .icono-flecha,
+  .icono-superior {
+    display: none; /* Oculta esos elementos en pantallas pequeñas */
+  }
+
+  .franja-container {
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .franja-texto {
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .contenido-wrapper {
+    padding-top: 100px;
+    height: auto;
+  }
+}
