@@ -4,3 +4,14 @@
     --negro-color: #000000;
     --celeste-color: #3BAFE1;
 }
+
+
+@font-face {
+    font-family: 'Kallisto_bold';
+    src: url('assets/fonts/fonnts.com-Kallisto_Bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Kallisto_ligth';
+    src: url('assets/fonts/fonnts.com-Kallisto_Light.otf') format('opentype');
+  }
