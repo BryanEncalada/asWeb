@@ -4,18 +4,16 @@
 }
 
 .contenido {
-  padding: 50px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 .titulo {
-  font-family: 'Apparat_Regular', sans-serif;
+  font-family: 'Kallisto_bold', sans-serif;
   font-size: 40px;
   font-weight: bold;
+  padding-top: 150px;
   margin-bottom: 50px;
 }
 
@@ -23,23 +21,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;   /* Centra las columnas horizontalmente */
-  width: 80%;        /* Opcional: para que ocupe toda la altura de la pantalla */
-  box-sizing: border-box;
+  vertical-align: middle;
+  width: 100%;        /* Opcional: para que ocupe toda la altura de la pantalla */
 }
 
 .metrica {
 
   background-color: rgba(255, 255, 255, 0.2);
-  /* blanco translúcido */
   border-radius: 30px;
-  /* bordes redondeados */
-  flex: 0 0 30%;             /* Aproximadamente 3 columnas con espacio */
-  max-width: 30%;
-  margin: 1%;                /* Espaciado entre columnas */
   text-align: center;
-  padding: 30px;
-  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 8%;
 
+}
+
+.imgNumeros{
+  width: 180px;
 }
 
 .letra {
@@ -47,8 +45,8 @@
   justify-content: center;
   display: flex;
   align-items: center;      /* centra verticalmente */
-  font-family: 'Apparat_Regular', sans-serif;
-  font-size: 40px;
+  font-family: 'Kallisto_bold', sans-serif;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   line-height: 1.2;
@@ -56,8 +54,13 @@
 }
 
 .cadenaimg{
+  background-image: url('../../../../../public/images/nosotros2/Recurso124.webp');
+  background-repeat: repeat;
+  background-size: contain;
   border: 0px solid red;
+  width: 100%;
 }
+
 
 /* Adaptación a móviles: 1 columna */
 @media (max-width: 767px) {

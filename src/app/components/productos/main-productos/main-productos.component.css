@@ -1,0 +1,87 @@
+.contenedor-productos {
+
+  width: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.823)),
+    url('../../../../../public/images/productos/Recurso122.webp') no-repeat center center;
+  background-size: cover;
+
+}
+
+.seccion-superior {
+  width: 100%;
+  text-align: left;
+}
+
+/* Subcontenedor para las 3 secciones de abajo */
+.subcontenedor-central {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+
+.seccion-iconos {
+  width: 10%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono {
+
+  filter: brightness(1.2);
+}
+
+.seccion-textos {
+  width: 50%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.lista-productos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-productos li {
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-family: 'Kallisto_bold', sans-serif;
+}
+
+.seccion-imagen {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grua-con-overlay {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.grua-img {
+  width: 55%;
+  height: auto;
+  display: block;
+}
+
+.icono-sobre-grua {
+  position: absolute;
+  top: 30%;         /* Inicia desde la mitad de la imagen base */
+  left: 0;
+  width: 60%;      /* Ajusta según lo necesario */
+  height: auto;
+  pointer-events: none;
+  transform: translateY(-50%);  /* Opcional: para centrar desde el punto medio */
+}

@@ -8,6 +8,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { MainNosotros2Component } from './components/nosotros2/main-nosotros2/main-nosotros2.component';
 import { MainMaquinariasComponent } from './components/maquinarias/main-maquinarias/main-maquinarias.component';
 import { SupplyComponent } from './components/supply/supply.component';
+import { MainProductosComponent } from './components/productos/main-productos/main-productos.component';
 
 
 
@@ -16,7 +17,7 @@ import { SupplyComponent } from './components/supply/supply.component';
 
   imports: [RouterOutlet, MainComponent, MainFooterComponent,
     MainNosotros2Component, BannerComponent, MainMaquinariasComponent,
-    SupplyComponent
+    SupplyComponent, MainProductosComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
