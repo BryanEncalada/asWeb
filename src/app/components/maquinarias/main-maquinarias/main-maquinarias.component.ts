@@ -20,6 +20,7 @@ export class MainMaquinariasComponent {
       tituloimg: 'assets/images/maquinarias/Capacitacion/Recurso58.webp',
       textimg: 'assets/images/maquinarias/Capacitacion/Recurso55.webp',
       booMostrtext: false,
+      booMostrIcoSup: true,
       style: {
         'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Capacitacion/Recurso60.webp')`,
       },
@@ -30,6 +31,7 @@ export class MainMaquinariasComponent {
       tituloimg: 'assets/images/maquinarias/Diagnostico/Recurso46.webp',
       textimg: 'assets/images/maquinarias/Diagnostico/Recurso44.webp',
       booMostrtext: false,
+      booMostrIcoSup: true,
       style: {
         'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Diagnostico/Recurso48.webp')`,
       }
@@ -40,6 +42,7 @@ export class MainMaquinariasComponent {
       tituloimg: 'assets/images/maquinarias/mantenimientoPre/Recurso34.webp',
       textimg: 'assets/images/maquinarias/mantenimientoPre/Recurso32.webp',
       booMostrtext: false,
+      booMostrIcoSup: true,
       style: {
         'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/mantenimientoPre/Recurso36.webp')`,
       }
@@ -50,6 +53,7 @@ export class MainMaquinariasComponent {
       tituloimg: 'assets/images/maquinarias/mantenimiento/Recurso70.webp',
       textimg: 'assets/images/maquinarias/mantenimiento/Recurso68.webp',
       booMostrtext: false,
+      booMostrIcoSup: true,
       style: {
         'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/mantenimiento/Recurso72.webp')`,
       }
@@ -60,6 +64,7 @@ export class MainMaquinariasComponent {
       tituloimg: 'assets/images/maquinarias/Arranque/Recurso82.webp',
       textimg: 'assets/images/maquinarias/Arranque/Recurso79.webp',
       booMostrtext: true,
+      booMostrIcoSup: true,
       style: {
         'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Arranque/Recurso84.webp')`,
       }
@@ -68,7 +73,14 @@ export class MainMaquinariasComponent {
 
 
   toggleFranja(index: number) {
+
     this.activeFranjaIndex = this.activeFranjaIndex === index ? null : index;
+
+    this.franjas.forEach( (element, i) => {
+      this.franjas[i].booMostrIcoSup = true;
+    });
+    this.franjas[index].booMostrIcoSup = this.activeFranjaIndex === index ? false : true; 
+
   }
 
 

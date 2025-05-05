@@ -11,6 +11,10 @@
   flex-direction: column;
   overflow: hidden;
   transition: flex 0.1s ease, background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
 }
 
 .contenido-franja {
@@ -114,6 +118,13 @@
 
 .icono {
   width: 60%;
+}
+
+.iconImaSuperpuesto {
+  z-index: 2;
+  width: 60px;
+  height: auto;
+  filter: brightness(0) invert(1);
 }
 
 .tituloimg{

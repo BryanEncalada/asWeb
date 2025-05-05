@@ -1,31 +1,26 @@
 <div class="maquinaria-layout">
   <!-- Franjas de colores (toda la pantalla ahora) -->
   <div class="franjas-colores">
-    <div
-      class="franja"
-      *ngFor="let franja of franjas; let i = index"
-      [ngClass]="franja.color"
-      (click)="toggleFranja(i)"
-    >
+
+    <div class="franja" *ngFor="let franja of franjas; let i = index" [ngClass]="franja.color"
+      (click)="toggleFranja(i)">
+      <img *ngIf="franja.booMostrIcoSup" [src]="franja.imagen" alt="Icono 4" class="iconImaSuperpuesto" />
+      
       <div *ngIf="activeFranjaIndex === i" class="contenido-franja">
-        <div class="contenedor-principal" [ngStyle]="franja.style" >
+
+        <div class="contenedor-principal" [ngStyle]="franja.style">
 
           <div class="caja derecha">
-            <img [src]="franja.imagen" alt="Icono Maquinaria" class="icono" />
+            <img  [src]="franja.imagen" alt="Icono Maquinaria" class="icono" />
           </div>
           <div class="caja izquierda">
-        
-              
-              <img [src]="franja.tituloimg" alt="tituloimg" class="tituloimg"  />
-
-              <img *ngIf="franja.booMostrtext" [src]="franja.textimg" alt="textimg" class="textimg" />
-           
+            <img [src]="franja.tituloimg" alt="tituloimg" class="tituloimg" />
+            <img *ngIf="franja.booMostrtext" [src]="franja.textimg" alt="textimg" class="textimg" />
           </div>
-
-
 
         </div>
       </div>
     </div>
+
   </div>
 </div>
