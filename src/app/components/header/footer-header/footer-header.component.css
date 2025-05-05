@@ -1,0 +1,12 @@
+.imgDerecha {
+  margin-top: -620px;
+  margin-right: -300px;
+
+}
+.contenedor {
+  width: 100%;
+  background-color: #1a1a1a;;
+  overflow: hidden;
+  border: 0px solid red;
+  text-align: right;
+}

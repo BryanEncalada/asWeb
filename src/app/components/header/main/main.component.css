@@ -2,9 +2,10 @@
   position: absolute;
   left: 0;
   top: 0;
+  margin-left: 10%;
   height: 100%;
   z-index: 1;
-  opacity: 35%;
+  opacity: 25%;
 
 }
 
