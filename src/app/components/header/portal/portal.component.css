@@ -15,12 +15,18 @@
   /* Asegura que ambas columnas tengan el mismo alto */
   justify-content: flex-start;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   /* Altura del contenedor (puedes ajustarla o usar 100vh) */
-  background-color: #f0f0f0;
   padding-left: 13%;
   box-sizing: border-box;
-  background: url('../../../../assets/images/header/Recurso_20.webp') no-repeat center center / cover;
+  background-color: black;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../../../../src/assets/images/header/Recurso_20.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: none;         /* 🔴 Esto elimina cualquier borde */
+  outline: none;        /* Opcional: elimina contornos al hacer foco */
+
 }
 
 .imgFlecha {
@@ -28,7 +34,7 @@
  }
 
 .columna {
-  padding-top: 20%;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -45,16 +51,16 @@
   font-family: 'Kallisto_bold', sans-serif;
 
   h1 {
-    font-size: 50pt;
+    font-size: 30pt;
     margin: 0;
   }
 
   p {
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: 'Apparat_Regular', sans-serif;
-    font-size: 19pt;
+    font-size: 15pt;
     font-weight: normal;
-    width: 650px;
+    width: 90%;
     margin: 10;
     padding: 0;
     text-align: justify;
