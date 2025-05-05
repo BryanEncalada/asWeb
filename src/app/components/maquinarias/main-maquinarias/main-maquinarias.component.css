@@ -55,7 +55,6 @@
   height: 80vh;
   vertical-align: middle;
 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../../../../src/assets/images/maquinarias/Recurso_30Maq.webp');
   background-size: cover;
   /* Escala la imagen para cubrir todo el div */
   background-position: center;
@@ -79,6 +78,7 @@
   border: 0px solid red;
   /* Centra el contenido verticalmente */
 
+
 }
 
 .derecha {
@@ -86,6 +86,7 @@
   /* alinea el contenido al lado derecho */
   justify-content: center;
   /* alinea verticalmente al centro */
+
 }
 
 .izquierda {
@@ -108,4 +109,43 @@
   /* 🎯 Bordes curvos */
   overflow: hidden;
   margin: 25px;
+}
+
+
+.icono {
+  width: 60%;
+}
+
+.tituloimg{
+  width: 80%;
+}
+
+.textimg{
+  width: 80%;
+}
+
+/* Adaptación a móviles: 1 columna */
+@media (max-width: 767px) {
+
+  .derecha {
+    display: none;
+  }
+
+  .contenedor-principal {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .franja:has(.contenido-franja) {
+    flex: 60;
+  }
+
+  .tituloimg{
+    width: 100%;
+  }
+
+  .textimg{
+    width: 100%;
+  }
+
 }
