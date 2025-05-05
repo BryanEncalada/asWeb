@@ -3,7 +3,7 @@
   width: 100%;
 
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.823)),
-    url('../../../../../public/images/productos/Recurso122.webp') no-repeat center center;
+    url('../../../../../src/assets/images/productos/Recurso122.webp') no-repeat center center;
   background-size: cover;
 
 }

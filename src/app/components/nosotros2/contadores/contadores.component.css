@@ -54,7 +54,7 @@
 }
 
 .cadenaimg{
-  background-image: url('../../../../../public/images/nosotros2/Recurso124.webp');
+  background-image: url('../../../../../src/assets/images/nosotros2/Recurso124.webp');
   background-repeat: repeat;
   background-size: contain;
   border: 0px solid red;

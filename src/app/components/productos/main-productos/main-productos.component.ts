@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
 export class MainProductosComponent {
 
   iconos: string[] = [
-    'images/productos/Recurso113.webp',
-    'images/productos/Recurso110.webp',
-    'images/productos/Recurso112.webp',
+    'assets/images/productos/Recurso113.webp',
+    'assets/images/productos/Recurso110.webp',
+    'assets/images/productos/Recurso112.webp',
   ];
 
   productos: string[] = [
