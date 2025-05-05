@@ -52,7 +52,7 @@
 
 .lista-productos li {
   margin-bottom: 8px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'Kallisto_bold', sans-serif;
 }
 
@@ -84,4 +84,34 @@
   height: auto;
   pointer-events: none;
   transform: translateY(-50%);  /* Opcional: para centrar desde el punto medio */
+}
+
+
+
+@media (max-width: 767px) {
+
+  .seccion-imagen{
+    display: none;
+  }
+
+  .seccion-iconos{
+    display: none;
+  }
+
+  .seccion-textos{
+    width: 100%;
+  }
+
+  .seccion-superior{
+
+    img{
+      width: 50%;
+    }
+  }
+
+  .lista-productos li {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
 }

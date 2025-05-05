@@ -18,9 +18,9 @@
   background-size: cover;       /* Escala la imagen para cubrir todo el div */
   background-position: center;  /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
-  border-radius: 20px; /* 🎯 Bordes curvos */
+  border-radius: 100px; /* 🎯 Bordes curvos */
   overflow: hidden;
-  margin: 15px;
+  margin: 25px;
 }
 
 
@@ -58,8 +58,7 @@
 
 
 .icono {
-
-  width: 50%;
+  width: 60%;
   object-fit: cover;
 }
 
@@ -72,16 +71,18 @@
 .tituloMaq {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  font-family: 'Kallisto_bold', sans-serif;
 }
 
 .descripcionMaq {
   font-size: 1.5rem;
-  line-height: 1.0;
+  line-height: 1.4;
   text-align: justify;
   font-family: 'Kallisto_ligth', sans-serif;
   width: 100%;
   white-space: pre-wrap; /* Permite que el texto se ajuste al ancho */
   word-wrap: break-word; /* Rompe palabras largas si es necesario */
+
 }
 
 
@@ -154,6 +155,17 @@
 
   .imagen-centro{
     display: none;
+  }
+
+  .descripcionMaq {
+    font-size: 1.1rem;
+    line-height: 1.3;
+
+  }
+
+  .imagen-container {
+    border-radius: 0px; /* 🎯 Bordes curvos */
+    margin: 0px;
   }
 
 }
