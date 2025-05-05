@@ -1,49 +1,40 @@
 <div class="maquinaria-layout">
-  <!-- Imagen en el lado izquierdo (60%) -->
-  <div class="imagen-container">
+  <!-- Franjas de colores (toda la pantalla ahora) -->
+  <div class="franjas-colores">
+    <div
+      class="franja"
+      *ngFor="let franja of franjas; let i = index"
+      [ngClass]="franja.color"
+      (click)="toggleFranja(i)"
+    >
+      <div *ngIf="activeFranjaIndex === i" class="contenido-franja">
+        <div class="contenedor-principal">
+
+          <div class="caja derecha">
+            <img [src]="franja.imagen" alt="Icono Maquinaria" class="icono" />
+          </div>
+          <div class="caja izquierda">
+            <div class="textoMaq">
+              <h1 class="tituloMaq">Arranque de <br> equipos</h1>
+              <p class="descripcionMaq">
+                En nuestro servicio de máquinas de <br>
+                perforación, ofrecemos equipos de <br>
+                última generación diseñados para <br>
+                maximizar la eficiencia y <br>
+                productividad en cada proyecto. Ya <br>
+                sea para minería, construcción, <br>
+                exploración o pozos de agua, <br>
+                nuestras máquinas están fabricadas <br>
+                con tecnología avanzada y los más <br>
+                altos estándares de calidad.
+              </p>
+            </div>
+          </div>
 
 
-    <div class="contenedor-principal">
-      <div class="caja derecha">
-        <!-- Ícono de maquinaria -->
-        <img src="assets/images/maquinarias/Recurso_10Maq.webp" alt="Icono Maquinaria" class="icono" />
-      </div>
-      <div class="caja izquierda">
-        <div class="textoMaq">
-          <h1 class="tituloMaq">Arranque de <br>
-            equipos</h1>
-          <p class="descripcionMaq">
-            En nuestro servicio de máquinas de  <br>
-            perforación, ofrecemos equipos de <br>
-            última generación diseñados para <br>
-            maximizar la eficiencia y <br>
-            productividad en cada proyecto. Ya <br>
-            sea para minería, construcción, <br>
-            exploración o pozos de agua, <br>
-            nuestras máquinas están fabricadas <br>
-            con tecnología avanzada y los más <br>
-            altos estándares de calidad.
-          </p>
 
         </div>
       </div>
     </div>
-
-
-  </div>
-
-  <!-- Imagen circular centrada -->
-  <div class="imagen-centro">
-    <img src="assets/images/maquinarias/Recurso123.webp" alt="Botón circular" />
-  </div>
-
-
-  <!-- Franjas de colores (40%) -->
-  <div class="franjas-colores">
-    <div class="franja azul"></div>
-    <div class="franja celeste"></div>
-    <div class="franja negro"></div>
-    <div class="franja mostaza"></div>
-
   </div>
 </div>

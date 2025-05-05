@@ -1,171 +1,111 @@
-.maquinaria-layout {
+.franjas-colores {
   display: flex;
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #E6E6E6;
+  height: 89vh;
+  flex-direction: row;
 }
 
+.franja {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: flex 0.1s ease, background-color 0.3s ease;
+}
 
+.contenido-franja {
+  color: white;
+  margin: 30px;
+}
 
-/* Imagen lado izquierdo */
+/* Colores */
+.azul {
+  background-color: #262040;
+}
+
+.celeste {
+  background-color: #33a7e0;
+}
+
+.negro {
+  background-color: #212121;
+}
+
+.mostaza {
+  background-color: #efb212;
+}
+
+.rojo {
+  background-color: #d7dfe9;
+}
+
+/* Opcional: cuando está activa una franja, puede crecer */
+.franja:has(.contenido-franja) {
+  flex: 7;
+}
+
+/* Reutiliza los estilos existentes para .contenedor-principal, .caja, .textoMaq, etc. */
+
+.contenedor-principal {
+  position: relative;
+  display: flex;
+  flex: 1;
+  /* Que crezca automáticamente dentro del contenedor padre */
+  width: 100%;
+  height: 80vh;
+  vertical-align: middle;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../../../../src/assets/images/maquinarias/Recurso_30Maq.webp');
+  background-size: cover;
+  /* Escala la imagen para cubrir todo el div */
+  background-position: center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  border-radius: 100px;
+  /* 🎯 Bordes curvos */
+  overflow: hidden;
+
+}
+
+.caja {
+  flex: 1;
+  /* Ambos contenedores toman el mismo ancho */
+  display: flex;
+  flex-direction: column;
+  /* Activa Flexbox dentro de cada caja */
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  border: 0px solid red;
+  /* Centra el contenido verticalmente */
+
+}
+
+.derecha {
+  align-items: flex-end;
+  /* alinea el contenido al lado derecho */
+  justify-content: center;
+  /* alinea verticalmente al centro */
+}
+
+.izquierda {
+  padding-left: 5%;
+}
+
 .imagen-container {
   position: relative;
   width: 70%;
   height: 100%;
 
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../../../../src/assets/images/maquinarias/Recurso_30Maq.webp');
-  background-size: cover;       /* Escala la imagen para cubrir todo el div */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  border-radius: 100px; /* 🎯 Bordes curvos */
+  background-size: cover;
+  /* Escala la imagen para cubrir todo el div */
+  background-position: center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  border-radius: 100px;
+  /* 🎯 Bordes curvos */
   overflow: hidden;
   margin: 25px;
-}
-
-
-
-/* Franjas de colores */
-.franjas-colores {
-  display: flex;
-  width: 30%;
-
-}
-
-.franja {
-  flex: 1;
-
-}
-
-.mostaza {
-  background-color: var(--mostaza-color);
-}
-
-.negro {
-  background-color: var(--negro-color);
-}
-
-.azul {
-  background-color: var(--azul-color);
-}
-
-.celeste {
-  background-color: var(--celeste-color);
-}
-
-/* ================================================== */
-/* ================================================== */
-
-
-.icono {
-  width: 60%;
-  object-fit: cover;
-}
-
-.textoMaq {
-  color: white;
-  font-weight: bold;
-
-}
-
-.tituloMaq {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  font-family: 'Kallisto_bold', sans-serif;
-}
-
-.descripcionMaq {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  text-align: justify;
-  font-family: 'Kallisto_ligth', sans-serif;
-  width: 100%;
-  white-space: pre-wrap; /* Permite que el texto se ajuste al ancho */
-  word-wrap: break-word; /* Rompe palabras largas si es necesario */
-
-}
-
-
-/* ================================================== */
-/* ================================================== */
-
-
-.contenedor-principal {
-  display: flex;         /* Activa Flexbox en el contenedor */
-  width: 100%;
-  height: 90vh; /* Ocupa toda la pantalla */
-
-}
-
-.caja {
-  flex: 1;               /* Ambos contenedores toman el mismo ancho */
-  display: flex;
-  flex-direction: column;        /* Activa Flexbox dentro de cada caja */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  /* border: 1px solid red;   Centra el contenido verticalmente */
-
-}
-
-.derecha {
-  align-items: flex-end;  /* alinea el contenido al lado derecho */
-  justify-content: center; /* alinea verticalmente al centro */
-}
-
-.izquierda {
-  padding-left: 5%;
-
-}
-
-
-/* ================================================== */
-/* ================================================== */
-
-/* Imagen central entre secciones */
-.imagen-centro {
-  position: absolute;
-  top: 50%;
-  left: 67.5%;
-  z-index: 4;
-}
-
-.imagen-centro img {
-  width: 80px;
-  /* ajusta según tamaño deseado */
-  height: 80px;
-  border-radius: 50%;
-}
-
-
-@media (max-width: 767px) {
-  .franjas-colores {
-    display: none;
-  }
-
-  .icono{
-    display: none;
-  }
-
-  .imagen-container{
-    width: 100%;
-  }
-
-  .derecha{
-    display: none;
-  }
-
-  .imagen-centro{
-    display: none;
-  }
-
-  .descripcionMaq {
-    font-size: 1.1rem;
-    line-height: 1.3;
-
-  }
-
-  .imagen-container {
-    border-radius: 0px; /* 🎯 Bordes curvos */
-    margin: 0px;
-  }
-
 }
