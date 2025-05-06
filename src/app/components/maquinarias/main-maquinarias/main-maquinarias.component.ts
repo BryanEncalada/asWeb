@@ -16,6 +16,9 @@ export class MainMaquinariasComponent {
   franjas = [
     {
       color: 'azul',
+      ColorFranja: { 
+        'background-color': `#262040`,
+      },
       imagen: 'assets/images/maquinarias/Capacitacion/Recurso57.webp',
       tituloimg: 'assets/images/maquinarias/Capacitacion/Recurso58.webp',
       textimg: 'assets/images/maquinarias/Capacitacion/Recurso55.webp',
@@ -27,6 +30,9 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'celeste',
+      ColorFranja: { 
+        'background-color': `#33a7e0`,
+      },
       imagen: 'assets/images/maquinarias/Diagnostico/Recurso43.webp',
       tituloimg: 'assets/images/maquinarias/Diagnostico/Recurso46.webp',
       textimg: 'assets/images/maquinarias/Diagnostico/Recurso44.webp',
@@ -38,6 +44,9 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'negro',
+      ColorFranja: { 
+        'background-color': `black`,
+      },
       imagen: 'assets/images/maquinarias/mantenimientoPre/Recurso31.webp',
       tituloimg: 'assets/images/maquinarias/mantenimientoPre/Recurso34.webp',
       textimg: 'assets/images/maquinarias/mantenimientoPre/Recurso32.webp',
@@ -49,6 +58,9 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'mostaza',
+      ColorFranja: { 
+        'background-color': `#efb212`,
+      },
       imagen: 'assets/images/maquinarias/mantenimiento/Recurso67.webp',
       tituloimg: 'assets/images/maquinarias/mantenimiento/Recurso70.webp',
       textimg: 'assets/images/maquinarias/mantenimiento/Recurso68.webp',
@@ -60,6 +72,9 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'rojo',
+      ColorFranja: { 
+        'background-color': `#d7dfe9`,
+      },
       imagen: 'assets/images/maquinarias/Arranque/Recurso81.webp',
       tituloimg: 'assets/images/maquinarias/Arranque/Recurso82.webp',
       textimg: 'assets/images/maquinarias/Arranque/Recurso79.webp',
@@ -76,10 +91,10 @@ export class MainMaquinariasComponent {
 
     this.activeFranjaIndex = this.activeFranjaIndex === index ? null : index;
 
-    this.franjas.forEach( (element, i) => {
+    this.franjas.forEach((element, i) => {
       this.franjas[i].booMostrIcoSup = true;
     });
-    this.franjas[index].booMostrIcoSup = this.activeFranjaIndex === index ? false : true; 
+    this.franjas[index].booMostrIcoSup = this.activeFranjaIndex === index ? false : true;
 
   }
 

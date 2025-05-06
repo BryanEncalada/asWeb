@@ -4,10 +4,17 @@
 
     <div class="franja" *ngFor="let franja of franjas; let i = index" [ngClass]="franja.color"
       (click)="toggleFranja(i)">
-      <img *ngIf="franja.booMostrIcoSup" [src]="franja.imagen" alt="Icono 4" class="iconImaSuperpuesto" />
+
+      <div class="section"  [ngStyle]="franja.style" >
+        <div class="overlay" [ngStyle]='franja.ColorFranja' ></div>
+        <img *ngIf="franja.booMostrIcoSup" [src]="franja.imagen" alt="Icono 4" class="iconImaSuperpuesto" />
+      </div>
+     
+      
       
       <div *ngIf="activeFranjaIndex === i" class="contenido-franja">
 
+        <img src="assets/images/maquinarias/Recurso77.webp" alt="iconPlay" class="iconPlay" />
         <div class="contenedor-principal" [ngStyle]="franja.style">
 
           <div class="caja derecha">
