@@ -14,11 +14,18 @@
 }
 
 /* Subcontenedor para las 3 secciones de abajo */
+
 .subcontenedor-central {
   flex: 1;
   display: flex;
   flex-direction: row;
   color: #ffffff;
+  height: 450px;
+  overflow-y: auto;
+  scrollbar-width: auto;
+  scrollbar-color: #a0a0a0 #2c2c2c;
+  max-height:550px; 
+  margin-right: 200px;
 }
 
 .seccion-iconos {
@@ -28,6 +35,12 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* ayuda a que sticky funcione dentro del flexbox */
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .icono {
@@ -41,7 +54,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow-y: auto;
+  /* Quitar cualquier scroll o altura aquí */
+  overflow: visible;
 }
 
 .lista-productos {
@@ -61,6 +75,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  align-self: flex-end; /* ayuda a que sticky funcione dentro del flexbox */
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -98,8 +118,20 @@
     display: none;
   }
 
+  .subcontenedor-central {
+    flex-direction: column;
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0; /* quitar padding lateral si quieres usar todo el ancho */
+    margin-right: 0; /* quitar margen derecho */
+  }
+
+
   .seccion-textos{
     width: 100%;
+    padding: 10px; /* opcional: espacio interno sin limitar ancho */
+    box-sizing: border-box; /* asegura que padding no sobrepase el 100% */
   }
 
   .seccion-superior{
@@ -113,5 +145,7 @@
     margin-bottom: 15px;
     font-size: 20px;
   }
+
+
 
 }
