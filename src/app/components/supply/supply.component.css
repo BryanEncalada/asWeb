@@ -29,12 +29,29 @@
 }
 
 
+
 .franja-img img {
   height: 380px;
   object-fit: contain;  
   margin-right: 80px; /* <-- Ajusta este valor según lo que necesites */
 }
 
+.perforadora-img {
+  height: 380px;
+  object-fit: contain;
+  margin-right: 80px;
+  z-index: 1;
+}
+
+/* Imagen encima */
+.superpuesta {
+  position: absolute;
+  bottom: 40px; /* o el valor que necesites para ubicarla */
+  right: 100px; /* ajusta según tu diseño */
+  height: 150px; /* o el tamaño que prefieras */
+  z-index: 2;
+  pointer-events: none; /* evita que interfiera con clics si no es interactiva */
+}
 
 
 .franja-texto {
