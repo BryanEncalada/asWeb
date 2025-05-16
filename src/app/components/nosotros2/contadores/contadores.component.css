@@ -13,7 +13,7 @@
   font-family: 'Kallisto_bold', sans-serif;
   font-size: 40px;
   font-weight: bold;
-  padding-top: 150px;
+  padding-top: 30px;
   margin-bottom: 50px;
 }
 
@@ -22,7 +22,9 @@
   flex-wrap: wrap;
   justify-content: center;   /* Centra las columnas horizontalmente */
   vertical-align: middle;
-  width: 100%;        /* Opcional: para que ocupe toda la altura de la pantalla */
+  width: 90%;        /* Opcional: para que ocupe toda la altura de la pantalla */
+  border: 0px solid red;
+
 }
 
 .metrica {
@@ -30,14 +32,15 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-right: 8%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 1%;
+  margin-left: 1%;
 
 }
 
 .imgNumeros{
-  width: 180px;
+  width: 150px;
 }
 
 .letra {
@@ -55,10 +58,15 @@
 
 .cadenaimg{
   background-image: url('../../../../../src/assets/images/nosotros2/Recurso124.webp');
-  background-repeat: repeat;
+
   background-size: contain;
   border: 0px solid red;
   width: 100%;
+
+  background-repeat: repeat-x;             /* solo repite horizontalmente */
+  background-position: bottom;      /* ubicada en la parte inferior y centrada */
+
+
 }
 
 
