@@ -8,11 +8,16 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
-  menuOpen = false;
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
 
-  }
+  menuOpen: boolean = false;
+
+toggleMenu() {
+  this.menuOpen = !this.menuOpen;
+}
+
+closeMenu() {
+  this.menuOpen = false;
+}
 
 }

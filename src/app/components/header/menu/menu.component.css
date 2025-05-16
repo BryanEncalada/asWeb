@@ -66,6 +66,7 @@
 
   .navbar .menu-toggle {
     display: flex;
+    z-index: 999; /* Para estar por encima del resto */
   }
 
   .navbar .nav-links {
@@ -78,6 +79,8 @@
     left: 0;
     padding: 1rem 2rem;
     display: none;
+    z-index: 999; /* Agregado para que se sobreponga */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Opcional: para mayor visibilidad */
   }
 
   .navbar .nav-links.active {

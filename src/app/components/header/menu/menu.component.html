@@ -13,11 +13,13 @@
     <span></span>
   </div>
 
-  <ul class="nav-links" [class.active]="menuOpen">
-    <li><a href="#">INICIO</a></li>
-    <li><a href="#Nosotros">NOSOTROS</a></li>
-    <li><a href="#Servicios">SERVICIOS</a></li>
-    <li><a href="#Nosotros2">CLIENTES</a></li>
-    <li><a href="#Contacto">CONTACTO</a></li>
-  </ul>
+<ul class="nav-links" [class.active]="menuOpen">
+  <li><a href="#Inicio" (click)="closeMenu()">INICIO</a></li>
+   <li><a href="#Marca" (click)="closeMenu()">MARCA</a></li>
+      <li><a href="#Productos" (click)="closeMenu()">PRODUCTOS</a></li> 
+  <li><a href="#Servicios" (click)="closeMenu()">SERVICIOS</a></li>
+
+  <li><a href="#Nosotros2" (click)="closeMenu()">CLIENTES</a></li>
+  <li><a href="#Contacto" (click)="closeMenu()">CONTACTO</a></li>
+</ul>
 </nav>
