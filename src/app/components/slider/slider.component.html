@@ -1,0 +1,21 @@
+<owl-carousel-o *ngIf="isBrowser" [options]="customOptions">
+  <ng-container *ngFor="let slide of slides">
+    <ng-template carouselSlide>
+      <div
+        class="slider-item"
+        [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
+      >
+        <div class="hero-text">
+          <h1>
+            <span>{{ slide.title1 }}</span
+            ><br />
+            <span>{{ slide.title2 }}</span
+            ><br />
+            <span>{{ slide.title3 }}</span>
+          </h1>
+          <p>{{ slide.description }}</p>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

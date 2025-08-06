@@ -7,17 +7,20 @@ import { MainMaquinariasComponent } from './components/maquinarias/main-maquinar
 import { SupplyComponent } from './components/supply/supply.component';
 import { MainProductosComponent } from './components/productos/main-productos/main-productos.component';
 
-
-
 @Component({
   selector: 'app-root',
 
-  imports: [RouterOutlet, MainComponent, MainFooterComponent,
-    MainNosotros2Component, MainMaquinariasComponent,
-    SupplyComponent, MainProductosComponent
+  imports: [
+    RouterOutlet,
+    MainComponent,
+    MainFooterComponent,
+    MainNosotros2Component,
+    MainMaquinariasComponent,
+    MainProductosComponent,
+    SupplyComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'AS';
