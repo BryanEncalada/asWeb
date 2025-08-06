@@ -15,82 +15,134 @@ export class MainMaquinariasComponent {
   activeFranjaStyle: { [key: string]: string } = {};
   activeFranjaBo: boolean = false;
   activeFranjaImg: string = '';
+  activeFranjatituloimg: string = '';
+  activeFranjabooMostrtext: boolean = false;
+  activeFranjatextimg: string = '';
+  activeFranjacontenidoFranja: { [key: string]: string } = {};
 
   franjas = [
     {
       color: 'azul',
       ColorFranja: {
-        'background-color': `#262040`,
+
       },
-      imagen: 'assets/images/maquinarias/Capacitacion/Recurso57.webp',
-      tituloimg: 'assets/images/maquinarias/Capacitacion/Recurso58.webp',
-      textimg: 'assets/images/maquinarias/Capacitacion/Recurso55.webp',
+      imagen: 'assets/images/maquinarias/MAQ1/ICONO.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ1/TITULO.webp',
+      textimg: 'assets/images/maquinarias/MAQ1/IMAGEN.webp',
       booMostrtext: false,
       booMostrIcoSup: true,
-      style: {
-        'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Capacitacion/Recurso60.webp')`,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ1/fondo1.webp')`,
       },
+      style: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ1/IMAGEN.webp')`,
+      },
+      contenidoFranja: { 'background-color': `#000C3F` },
     },
     {
-      color: 'celeste',
+      color: 'azul',
       ColorFranja: {
-        'background-color': `#33a7e0`,
+
       },
-      imagen: 'assets/images/maquinarias/Diagnostico/Recurso43.webp',
-      tituloimg: 'assets/images/maquinarias/Diagnostico/Recurso46.webp',
-      textimg: 'assets/images/maquinarias/Diagnostico/Recurso44.webp',
+      imagen: 'assets/images/maquinarias/MAQ2/ICONO.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ2/TITULO.webp',
+      textimg: 'assets/images/maquinarias/MAQ2/IMAGEN.webp',
       booMostrtext: false,
       booMostrIcoSup: true,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ2/fondo2.webp')`,
+      },
       style: {
-        'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Diagnostico/Recurso48.webp')`,
-      }
+        'background-image': `url('../../assets/images/maquinarias/MAQ2/IMAGEN.webp')`,
+      },
+      contenidoFranja: { 'background-color': `#35A8E0` },
     },
     {
-      color: 'negro',
+      color: 'azul',
       ColorFranja: {
-        'background-color': `black`,
+
       },
-      imagen: 'assets/images/maquinarias/mantenimientoPre/Recurso31.webp',
-      tituloimg: 'assets/images/maquinarias/mantenimientoPre/Recurso34.webp',
-      textimg: 'assets/images/maquinarias/mantenimientoPre/Recurso32.webp',
+      imagen: 'assets/images/maquinarias/MAQ3/ICONO.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ3/TITULO.webp',
+      textimg: 'assets/images/maquinarias/MAQ3/IMAGEN.webp',
       booMostrtext: false,
       booMostrIcoSup: true,
-      style: {
-        'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/mantenimientoPre/Recurso36.webp')`,
-      }
-    },
-    {
-      color: 'mostaza',
-      ColorFranja: {
-        'background-color': `#efb212`,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ3/fondo3.webp')`,
       },
-      imagen: 'assets/images/maquinarias/mantenimiento/Recurso67.webp',
-      tituloimg: 'assets/images/maquinarias/mantenimiento/Recurso70.webp',
-      textimg: 'assets/images/maquinarias/mantenimiento/Recurso68.webp',
+      style: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ3/IMAGEN.webp')`,
+      },
+      contenidoFranja: { 'background-color': `black` },
+    }
+    ,
+    {
+      color: 'azul',
+      ColorFranja: {
+
+      },
+      imagen: 'assets/images/maquinarias/MAQ4/ICONO.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ4/TITULO.webp',
+      textimg: 'assets/images/maquinarias/MAQ4/IMAGEN.webp',
       booMostrtext: false,
       booMostrIcoSup: true,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ4/fondo4.webp')`,
+      },
       style: {
-        'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/mantenimiento/Recurso72.webp')`,
-      }
+        'background-image': `url('../../assets/images/maquinarias/MAQ4/IMAGEN.webp')`,
+      },
+      contenidoFranja: { 'background-color': `#F2BA11` },
     },
     {
-      color: 'rojo',
+      color: 'azul',
       ColorFranja: {
-        'background-color': `#d7dfe9`,
+
       },
-      imagen: 'assets/images/maquinarias/Arranque/Recurso81.webp',
-      tituloimg: 'assets/images/maquinarias/Arranque/Recurso82.webp',
-      textimg: 'assets/images/maquinarias/Arranque/Recurso79.webp',
-      booMostrtext: true,
+      imagen: 'assets/images/maquinarias/MAQ5/ICONO.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ5/TITULO.webp',
+      textimg: 'assets/images/maquinarias/MAQ5/IMAGEN.webp',
+      booMostrtext: false,
       booMostrIcoSup: true,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ5/fondo5.webp')`,
+      },
       style: {
-        'background-image': `linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url('../../assets/images/maquinarias/Arranque/Recurso84.webp')`,
-      }
-    } // nueva franja
+        'background-image': `url('../../assets/images/maquinarias/MAQ5/IMAGEN.webp')`,
+      },
+      contenidoFranja: { 'background-color': `#EAEAEA` },
+    },
+    {
+      color: 'azul',
+      ColorFranja: {
+
+      },
+      imagen: 'assets/images/maquinarias/MAQ6/icono.webp',
+      tituloimg: 'assets/images/maquinarias/MAQ6/titulo.webp',
+      textimg: 'assets/images/maquinarias/MAQ6/imagen.webp',
+      booMostrtext: false,
+      booMostrIcoSup: true,
+      styleFondo: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ6/fondo6.webp')`,
+      },
+      style: {
+        'background-image': `url('../../assets/images/maquinarias/MAQ6/imagen.webp')`,
+      },
+      contenidoFranja: { 'background-color': `#00A9A6` },
+    }
+
+
+
+
+    // nueva franja
   ];
 
 
   toggleFranja(index: number) {
+
+    if(index == 0){
+this.activeFranjaBo = true;
+    }
 
     this.activeFranjaIndex = this.activeFranjaIndex === index ? null : index;
 
@@ -110,11 +162,15 @@ export class MainMaquinariasComponent {
 
     } else {
 
-      console.log(this.franjas[index].style);
+      console.log(this.franjas[index]);
 
       this.activeFranjaBo = true;
       this.activeFranjaStyle = this.franjas[index].style;
       this.activeFranjaImg = this.franjas[index].imagen;
+      this.activeFranjatituloimg = this.franjas[index].tituloimg;
+      this.activeFranjabooMostrtext = this.franjas[index].booMostrtext;
+      this.activeFranjatextimg = this.franjas[index].textimg;
+      this.activeFranjacontenidoFranja = this.franjas[index].contenidoFranja;
 
     }
 

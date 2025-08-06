@@ -23,30 +23,9 @@
   color: white;
   margin: 30px;
   text-align: right;
+  cursor: pointer;
 }
 
-/* Colores */
-.azul {
-
-  background-color: #262040;
-
-}
-
-.celeste {
-  background-color: #33a7e0;
-}
-
-.negro {
-  background-color: #212121;
-}
-
-.mostaza {
-  background-color: #efb212;
-}
-
-.rojo {
-  background-color: #d7dfe9;
-}
 
 /* Opcional: cuando está activa una franja, puede crecer */
 .franja:has(.contenido-franja) {
