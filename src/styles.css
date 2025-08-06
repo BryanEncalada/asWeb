@@ -1,29 +1,80 @@
 :root {
-    --azul-color: #051c82;
-    --mostaza-color: #D6A600;
-    --negro-color: #000000;
-    --celeste-color: #3BAFE1;
-    --azul-letra-color:#1074b8;
+  --azul-color: #051c82;
+  --mostaza-color: #d6a600;
+  --negro-color: #000000;
+  --celeste-color: #3bafe1;
+  --azul-letra-color: #1074b8;
 }
 
+@font-face {
+  font-family: "Kallisto_bold";
+  src: url("assets/fonts/fonnts.com-Kallisto_Bold.otf") format("opentype");
+}
 
 @font-face {
-    font-family: 'Kallisto_bold';
-    src: url('assets/fonts/fonnts.com-Kallisto_Bold.otf') format('opentype');
-  }
+  font-family: "Kallisto_ligth";
+  src: url("assets/fonts/fonnts.com-Kallisto_Light.otf") format("opentype");
+}
 
-  @font-face {
-    font-family: 'Kallisto_ligth';
-    src: url('assets/fonts/fonnts.com-Kallisto_Light.otf') format('opentype');
-  }
+@font-face {
+  font-family: "ApparatSemiCond";
+  src: url("assets/fonts/fonnts.com-ApparatSemiCond_Heavy.otf")
+    format("opentype");
+}
 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-  @font-face {
-    font-family: 'ApparatSemiCond';
-    src: url('assets/fonts/fonnts.com-ApparatSemiCond_Heavy.otf') format('opentype');
-  }
-
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Owl Carousel basic styles */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+.owl-carousel .owl-item {
+  float: left;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.owl-carousel .owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: gray;
+}
+.owl-carousel .owl-dot.active {
+  background: white;
+}

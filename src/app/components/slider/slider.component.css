@@ -1,0 +1,30 @@
+.slider-item {
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.hero-text {
+  max-width: 500px;
+  color: white;
+  font-family: "Kallisto_bold", sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 30pt;
+  margin: 0;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-family: "Apparat_Regular", sans-serif;
+  font-size: 15pt;
+  width: 90%;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+}
