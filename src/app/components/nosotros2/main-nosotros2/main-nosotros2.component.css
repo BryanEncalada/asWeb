@@ -1,9 +1,22 @@
 .contenedor-principal {
+  position: relative; /* NECESARIO para que .casco se posicione bien */
   width: 100%;
-
   overflow: hidden;
   color: white;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  background: url('../../../../assets/images/nosotros2/Recurso_50.webp') no-repeat center center / cover;
+  background: url('../../../../assets/images/nosotros2/FONDO.webp') no-repeat center center / cover;
+}
+
+.casco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px; /* o usa % o vw si quieres responsive */
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  background: url('../../../../assets/images/nosotros2/CASCOFONDO.webp') no-repeat center center;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.8;
 }

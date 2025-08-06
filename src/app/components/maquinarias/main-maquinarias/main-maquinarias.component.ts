@@ -12,11 +12,14 @@ import { Component } from '@angular/core';
 export class MainMaquinariasComponent {
 
   activeFranjaIndex: number | null = null;
+  activeFranjaStyle: { [key: string]: string } = {};
+  activeFranjaBo: boolean = false;
+  activeFranjaImg: string = '';
 
   franjas = [
     {
       color: 'azul',
-      ColorFranja: { 
+      ColorFranja: {
         'background-color': `#262040`,
       },
       imagen: 'assets/images/maquinarias/Capacitacion/Recurso57.webp',
@@ -30,7 +33,7 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'celeste',
-      ColorFranja: { 
+      ColorFranja: {
         'background-color': `#33a7e0`,
       },
       imagen: 'assets/images/maquinarias/Diagnostico/Recurso43.webp',
@@ -44,7 +47,7 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'negro',
-      ColorFranja: { 
+      ColorFranja: {
         'background-color': `black`,
       },
       imagen: 'assets/images/maquinarias/mantenimientoPre/Recurso31.webp',
@@ -58,7 +61,7 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'mostaza',
-      ColorFranja: { 
+      ColorFranja: {
         'background-color': `#efb212`,
       },
       imagen: 'assets/images/maquinarias/mantenimiento/Recurso67.webp',
@@ -72,7 +75,7 @@ export class MainMaquinariasComponent {
     },
     {
       color: 'rojo',
-      ColorFranja: { 
+      ColorFranja: {
         'background-color': `#d7dfe9`,
       },
       imagen: 'assets/images/maquinarias/Arranque/Recurso81.webp',
@@ -92,9 +95,28 @@ export class MainMaquinariasComponent {
     this.activeFranjaIndex = this.activeFranjaIndex === index ? null : index;
 
     this.franjas.forEach((element, i) => {
-      this.franjas[i].booMostrIcoSup = true;
+      this.franjas[i].booMostrIcoSup = false;
     });
+
     this.franjas[index].booMostrIcoSup = this.activeFranjaIndex === index ? false : true;
+
+    if (this.activeFranjaIndex == null) {
+      this.activeFranjaBo = false;
+
+      this.franjas.forEach((element, i) => {
+        this.franjas[i].booMostrIcoSup = true;
+      });
+
+
+    } else {
+
+      console.log(this.franjas[index].style);
+
+      this.activeFranjaBo = true;
+      this.activeFranjaStyle = this.franjas[index].style;
+      this.activeFranjaImg = this.franjas[index].imagen;
+
+    }
 
   }
 

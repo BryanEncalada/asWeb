@@ -1,34 +1,36 @@
-<div id="Servicios" ></div>
+<div id="Servicios"></div>
 <div class="maquinaria-layout">
   <!-- Franjas de colores (toda la pantalla ahora) -->
   <div class="franjas-colores">
 
+    <div *ngIf="activeFranjaBo" class="contenido-franja">
+
+      <img src="assets/images/maquinarias/Recurso77.webp" alt="iconPlay" class="iconPlay" />
+      <div class="contenedor-principal" [ngStyle]="activeFranjaStyle">
+        <div class="caja derecha">
+          <img [src]="activeFranjaImg" />
+        </div>
+        <div class="caja izquierda">
+          <img alt="tituloimg" class="tituloimg" />
+          <img alt="textimg" class="textimg" />
+        </div>
+
+      </div>
+    </div>
+
     <div class="franja" *ngFor="let franja of franjas; let i = index" [ngClass]="franja.color"
       (click)="toggleFranja(i)">
 
-      <div class="section"  [ngStyle]="franja.style" >
-        <div class="overlay" [ngStyle]='franja.ColorFranja' ></div>
+      <div class="section" [ngStyle]="franja.style">
+        <div class="overlay" [ngStyle]='franja.ColorFranja'></div>
         <img *ngIf="franja.booMostrIcoSup" [src]="franja.imagen" alt="Icono 4" class="iconImaSuperpuesto" />
       </div>
 
 
 
-      <div *ngIf="activeFranjaIndex === i" class="contenido-franja">
-
-        <img src="assets/images/maquinarias/Recurso77.webp" alt="iconPlay" class="iconPlay" />
-        <div class="contenedor-principal" [ngStyle]="franja.style">
-
-          <div class="caja derecha">
-            <img  [src]="franja.imagen" alt="Icono Maquinaria" class="icono" />
-          </div>
-          <div class="caja izquierda">
-            <img [src]="franja.tituloimg" alt="tituloimg" class="tituloimg" />
-            <img *ngIf="franja.booMostrtext" [src]="franja.textimg" alt="textimg" class="textimg" />
-          </div>
-
-        </div>
-      </div>
     </div>
+
+
 
   </div>
 </div>

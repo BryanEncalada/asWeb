@@ -20,9 +20,11 @@
 .metricas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;   /* Centra las columnas horizontalmente */
+  justify-content: center;
+  /* Centra las columnas horizontalmente */
   vertical-align: middle;
-  width: 90%;        /* Opcional: para que ocupe toda la altura de la pantalla */
+  width: 100%;
+  /* Opcional: para que ocupe toda la altura de la pantalla */
   border: 0px solid red;
 
 }
@@ -32,22 +34,23 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 1%;
-  margin-left: 1%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
 
 }
 
-.imgNumeros{
-  width: 150px;
+.imgNumeros {
+  width: 200px;
 }
 
 .letra {
   align-items: center;
   justify-content: center;
   display: flex;
-  align-items: center;      /* centra verticalmente */
+  align-items: center;
+  /* centra verticalmente */
   font-family: 'Kallisto_bold', sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -56,17 +59,16 @@
 
 }
 
-.cadenaimg{
-  background-image: url('../../../../../src/assets/images/nosotros2/Recurso124.webp');
-
-  background-size: contain;
-  border: 0px solid red;
-  width: 100%;
-
-  background-repeat: repeat-x;             /* solo repite horizontalmente */
-  background-position: bottom;      /* ubicada en la parte inferior y centrada */
-
-
+.letraSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }
 
 

@@ -1,7 +1,0 @@
-<div class="empresas-container">
-    <div [ngClass]="{'empresa-card': !empresa.centro, 'empresa-card-centro': empresa.centro}"
-        *ngFor="let empresa of empresas">
-        <img [src]="empresa.logo" alt="{{ empresa.nombre }}" class="empresa-logo" *ngIf="empresa.logo" />
-        <p>{{ empresa.descripcion }}</p>
-    </div>
-</div>
