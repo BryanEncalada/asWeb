@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
   height: 400px;
-  padding-top: 250px;
+  padding-top: 380px;
   margin: 0 auto;
   position: relative;
 }
@@ -89,7 +89,7 @@
 
 .texto-superior-derecha {
   position: absolute;
-  top: 40px;
+  top: 120px;
   right: 2rem;
   max-width: 700px;
   text-align: right;
@@ -124,7 +124,7 @@
   }
 
   .contenido-wrapper {
-    padding-top: 100px;
+    padding-top: 0;
     height: auto;
   }
 }

@@ -6,9 +6,9 @@
   height: 100%;
   z-index: 1;
   opacity: 25%;
-
 }
 
 .contenedor-principal {
   position: relative;
+  background-color: #1a1a1a;
 }

@@ -4,7 +4,7 @@
   background-position: center;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 20%;
 }
 
 .hero-text {
@@ -22,7 +22,7 @@
   margin-top: 15px;
   font-family: "Apparat_Regular", sans-serif;
   font-size: 15pt;
-  width: 90%;
+  width: 100%;
   padding: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;

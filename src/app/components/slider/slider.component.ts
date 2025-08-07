@@ -22,8 +22,8 @@ export class SliderComponent {
     autoplayTimeout: 4000, // ⏱️ Tiempo entre cada slide (en ms)
     autoplayHoverPause: false, // 🚫 No detener al pasar el mouse
     dots: true, // 🔘 Mostrar puntos
-    nav: false, // ⬅️➡️ Ocultar flechas (puedes poner true si las quieres)
-    items: 1, // 1 slide a la vez
+    nav: false,
+    items: 1,
   };
 
   slides = [

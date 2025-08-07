@@ -1,11 +1,11 @@
 .contenedor-productos {
-
   width: 100%;
+  height: 100%;
 
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.823)),
-    url('../../../../../src/assets/images/productos/Recurso122.webp') no-repeat center center;
+    url("../../../../../src/assets/images/productos/Recurso122.webp") no-repeat
+      center center;
   background-size: cover;
-
 }
 
 .seccion-superior {
@@ -24,7 +24,7 @@
   overflow-y: auto;
   scrollbar-width: auto;
   scrollbar-color: #a0a0a0 #2c2c2c;
-  max-height:550px; 
+  max-height: 80%;
   margin-right: 200px;
 }
 
@@ -44,7 +44,6 @@
 }
 
 .icono {
-
   filter: brightness(1.2);
 }
 
@@ -67,7 +66,7 @@
 .lista-productos li {
   margin-bottom: 8px;
   font-size: 28px;
-  font-family: 'Kallisto_bold', sans-serif;
+  font-family: "Kallisto_bold", sans-serif;
 }
 
 .seccion-imagen {
@@ -83,7 +82,6 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-
 .grua-con-overlay {
   position: relative;
   width: 100%;
@@ -98,23 +96,20 @@
 
 .icono-sobre-grua {
   position: absolute;
-  top: 30%;         /* Inicia desde la mitad de la imagen base */
+  top: 30%; /* Inicia desde la mitad de la imagen base */
   left: 0;
-  width: 60%;      /* Ajusta según lo necesario */
+  width: 60%; /* Ajusta según lo necesario */
   height: auto;
   pointer-events: none;
-  transform: translateY(-50%);  /* Opcional: para centrar desde el punto medio */
+  transform: translateY(-50%); /* Opcional: para centrar desde el punto medio */
 }
 
-
-
 @media (max-width: 767px) {
-
-  .seccion-imagen{
+  .seccion-imagen {
     display: none;
   }
 
-  .seccion-iconos{
+  .seccion-iconos {
     display: none;
   }
 
@@ -127,17 +122,15 @@
     margin-right: 0; /* quitar margen derecho */
   }
 
-
-  .seccion-textos{
+  .seccion-textos {
     width: 100%;
     padding: 10px; /* opcional: espacio interno sin limitar ancho */
     box-sizing: border-box; /* asegura que padding no sobrepase el 100% */
   }
 
-  .seccion-superior{
-
-    img{
-      width: 50%;
+  .seccion-superior {
+    img {
+      width: 150%;
     }
   }
 
@@ -145,7 +138,4 @@
     margin-bottom: 15px;
     font-size: 20px;
   }
-
-
-
 }
