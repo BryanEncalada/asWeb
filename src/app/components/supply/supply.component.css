@@ -1,6 +1,6 @@
 .contenido-wrapper {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   height: 400px;
   padding-top: 250px;
   margin: 0 auto;
@@ -8,10 +8,10 @@
 }
 
 .franja-container {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
- 
+
   background: linear-gradient(to right, #6b28a9, #000000);
   height: 150px;
   padding: 0 3rem;
@@ -25,14 +25,11 @@
   display: flex;
   align-items: end;
   justify-content: flex-end;
-
 }
-
-
 
 .franja-img img {
   height: 380px;
-  object-fit: contain;  
+  object-fit: contain;
   margin-right: 80px; /* <-- Ajusta este valor según lo que necesites */
 }
 
@@ -53,7 +50,6 @@
   pointer-events: none; /* evita que interfiera con clics si no es interactiva */
 }
 
-
 .franja-texto {
   flex: 1;
   max-width: 600px;
@@ -62,14 +58,14 @@
   text-align: justify;
   padding-right: 2rem;
   z-index: 1;
- color:white;
- font-family: 'Kallisto_ligth', sans-serif;
+  color: white;
+  font-family: "Kallisto_ligth", sans-serif;
 }
 
 .icono-flecha {
   position: absolute;
   bottom: -180px; /* lo coloca debajo de la franja */
-  left: 53%;   
+  left: 53%;
   z-index: 3;
 }
 
@@ -77,7 +73,6 @@
   width: 450px;
   height: auto;
 }
-
 
 .icono-superior {
   position: absolute;
@@ -94,19 +89,18 @@
 
 .texto-superior-derecha {
   position: absolute;
-  top: 40px; 
-  right: 2rem; 
+  top: 40px;
+  right: 2rem;
   max-width: 700px;
   text-align: right;
-  color:var(--azul-letra-color);
+  color: var(--azul-letra-color);
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
-  font-family: 'Kallisto_ligth', sans-serif;
+  font-family: "Kallisto_ligth", sans-serif;
   z-index: 4;
 }
-
 
 @media (max-width: 768px) {
   .texto-superior-derecha,
@@ -133,4 +127,17 @@
     padding-top: 100px;
     height: auto;
   }
+}
+
+.supply-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f0f0f0;
+}
+
+.animated-img {
+  width: 300px;
+  height: auto;
 }

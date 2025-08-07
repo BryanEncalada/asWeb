@@ -1,34 +1,48 @@
+<div #scrollTrigger class="scroll-detector" style="height: 1px"></div>
 
-<div id="Nosotros" ></div>
+<div id="Nosotros"></div>
 <div class="contenido-wrapper">
-
   <div class="texto-superior-derecha">
-    <span>DRILLING</span><br>
-    <span>SUPPLIER</span><br>
-    <span>TECHNOLOGY</span>
+    <br />
+    <span>DRILLING</span><br />
+    <span>SOLUTIONS</span><br />
   </div>
 
-<div class="franja-container">
-  <div class="franja-img">
-    <div class="icono-superior">
-      <img src="assets/images/supply/Recurso 35.webp" alt="Icono superior" />
+  <div class="franja-container">
+    <div class="franja-img">
+      <div class="icono-superior">
+        <img
+          #observedImg
+          [@slideInFromLeft]="isVisible ? 'visible' : 'hidden'"
+          src="assets/images/supply/flechas_animadas_derecha_lenta.gif"
+          alt="Icono superior"
+          class="animated-img"
+        />
+      </div>
+
+      <img src="assets/images/supply/Recurso 31.webp" alt="Perforadora" />
+
+      <img
+        class="superpuesta"
+        src="assets/images/supply/maquina.webp"
+        alt="Imagen encima"
+      />
     </div>
-    <img src="assets/images/supply/Recurso 31.webp" alt="Perforadora" />
 
-     <img class="superpuesta" src="assets/images/supply/maquina.webp" alt="Imagen encima" />
+    <div class="franja-texto">
+      <p>
+        Con más de 30 años en el Perú, brindamos soluciones integrales en
+        perforación, siendo aliados estratégicos de empresas mineras,
+        constructoras y de exploración. Ofrecemos tecnología de punta y un
+        servicio comprometido con la excelencia.
+      </p>
+    </div>
+
+    <div class="icono-flecha">
+      <img
+        src="assets/images/supply/flechas_izquierda_lenta.gif"
+        alt="Flecha derecha"
+      />
+    </div>
   </div>
-
-  <div class="franja-texto">
-
-    <p>
-      Con más de 30 años en el Perú, brindamos soluciones integrales en perforación,
-      siendo aliados estratégicos de empresas mineras, constructoras y de exploración.
-      Ofrecemos tecnología de punta y un servicio comprometido con la excelencia.
-    </p>
-  </div>
-
-  <div class="icono-flecha">
-    <img src="assets/images/supply/Recurso 34.webp" alt="Flecha derecha" />
-  </div>
-</div>
 </div>

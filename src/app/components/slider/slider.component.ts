@@ -28,7 +28,7 @@ export class SliderComponent {
 
   slides = [
     {
-      image: 'assets/images/header/Recurso_20.webp',
+      image: 'assets/images/header/1-casagrande.png',
       title1: 'AMÉRICA',
       title2: 'SUR',
       title3: 'INTERNACIONAL',
@@ -36,7 +36,88 @@ export class SliderComponent {
         'Suministramos equipos, herramientas y compuestos para perforación desde 1996. Nuestros clientes: Minería, Exploración, Construcción y Pozos de Agua.',
     },
     {
-      image: 'assets/images/header/Recurso_21.webp',
+      image: 'assets/images/header/2-nca.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/3-progradex.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/4-sreps.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/5-harlsan.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/6-cme.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/7-hd.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/8-eurodrill.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/9-sundril.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/10-matrix.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+    {
+      image: 'assets/images/header/11-bestolife.png',
+      title1: 'EXPLORACIÓN',
+      title2: 'Y',
+      title3: 'PERFORACIÓN',
+      description:
+        'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
+    },
+
+    {
+      image: 'assets/images/header/12-mudlogic.png',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
