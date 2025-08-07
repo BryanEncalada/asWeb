@@ -14,7 +14,7 @@
         <img
           #observedImg
           [@slideInFromLeft]="isVisible ? 'visible' : 'hidden'"
-          src="assets/images/supply/flechas_animadas_derecha_lenta.gif"
+          src="assets/images/supply/Recurso 35.webp"
           alt="Icono superior"
           class="animated-img"
         />
@@ -40,8 +40,11 @@
 
     <div class="icono-flecha">
       <img
-        src="assets/images/supply/flechas_izquierda_lenta.gif"
+        #observedRightImg
+        [@slideInFromRight]="isVisibleRight ? 'visible' : 'hidden'"
+        src="assets/images/supply/Recurso 34.webp"
         alt="Flecha derecha"
+        class="animated-img"
       />
     </div>
   </div>
