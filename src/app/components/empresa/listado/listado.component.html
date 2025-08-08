@@ -1,0 +1,30 @@
+<div class="partners-container">
+  <!-- Columna izquierda -->
+  <div class="partners-column-left">
+    <div class="partner-card" *ngFor="let partner of partnersLeft; let i = index">
+
+      <div class="img-wrapper">
+        <img [src]="partner.image" alt="Descripción imagen">
+        <div class="caption">
+          <p>{{ partner.description }}</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Columna derecha -->
+  <div class="partners-column-right">
+    <div class="partner-card" *ngFor="let partner of partnersRight; let i = index">
+
+      <div class="img-wrapper">
+        <img [src]="partner.image" alt="Descripción imagen">
+        <div class="caption-right">
+          <p>{{ partner.description }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
