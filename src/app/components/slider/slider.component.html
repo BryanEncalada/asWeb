@@ -1,4 +1,8 @@
-<owl-carousel-o *ngIf="isBrowser" [options]="customOptions">
+<owl-carousel-o
+  *ngIf="isBrowser"
+  [options]="customOptions"
+  style="background-color: antiquewhite"
+>
   <ng-container *ngFor="let slide of slides">
     <ng-template carouselSlide>
       <div
@@ -7,8 +11,7 @@
       >
         <div class="hero-text">
           <h1>
-            <span>{{ slide.title1 }}</span
-            ><br />
+            <span>AMÉRICA</span><br />
             <span>{{ slide.title2 }}</span
             ><br />
             <span>{{ slide.title3 }}</span>

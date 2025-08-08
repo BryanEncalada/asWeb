@@ -6,6 +6,7 @@ import { MainNosotros2Component } from './components/nosotros2/main-nosotros2/ma
 import { MainMaquinariasComponent } from './components/maquinarias/main-maquinarias/main-maquinarias.component';
 import { SupplyComponent } from './components/supply/supply.component';
 import { MainProductosComponent } from './components/productos/main-productos/main-productos.component';
+import { ListadoComponent } from "./components/empresa/listado/listado.component";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { MainProductosComponent } from './components/productos/main-productos/ma
     MainMaquinariasComponent,
     MainProductosComponent,
     SupplyComponent,
-  ],
+    ListadoComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
