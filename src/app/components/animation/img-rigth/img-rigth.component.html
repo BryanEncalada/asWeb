@@ -1,0 +1,7 @@
+<div #observedImg 
+[@slideInFromRigth]="isDesktop ? (isVisible ? 'visible' : 'hidden') : ''" 
+[@sFromTopRigth]="!isDesktop ? (isVisible ? 'visible' : 'hidden') : ''" 
+class="image-container">
+    <img [src]="img" alt="Imagen descriptiva" />
+    <div class="centered-text">{{mensaje}}</div>
+</div>

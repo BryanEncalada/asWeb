@@ -1,23 +1,17 @@
-import { CommonModule, NgFor, isPlatformBrowser } from '@angular/common';
-import { Component, ElementRef, ViewChild, PLATFORM_ID, Inject, ViewChildren, QueryList, } from '@angular/core';
-import { trigger, style, state, transition, animate, } from '@angular/animations';
+import { CommonModule, NgFor } from '@angular/common';
+import {  Component} from '@angular/core';
+import { ImgLefComponent } from "../../animation/img-lef/img-lef.component";
+import { ImgRigthComponent } from "../../animation/img-rigth/img-rigth.component";
 
 
 @Component({
   selector: 'app-listado',
-  imports: [NgFor, CommonModule],
+  imports: [NgFor, CommonModule, ImgLefComponent, ImgRigthComponent],
+  standalone: true,
   templateUrl: './listado.component.html',
-  styleUrl: './listado.component.css',
-  animations: [
-    trigger('slideInFromBottom', [
-      state('hidden', style({ opacity: 0, transform: 'translateY(50px)' })),
-      state('visible', style({ opacity: 1, transform: 'translateY(0)' })),
-      transition('hidden => visible', animate('600ms ease-out'))
-    ])
-  ]
+  styleUrl: './listado.component.css'
 })
 export class ListadoComponent {
-
 
   partnersLeft = [
     {
@@ -72,6 +66,7 @@ export class ListadoComponent {
       description: 'Soluciones innovadoras de aire comprimido y nitrógeno (Compresores y Boosters) para perforación sísmica terrestre, estudios sísmicos marinos, exploración mineral y exploración subterránea; así como aplicaciones de gas y petróleo.'
     }
   ];
+
 
 
 

@@ -52,7 +52,7 @@ export class SupplyComponent implements AfterViewInit {
         const observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
-              console.log('Visible left');
+              console.log('Visible 1');
               this.isVisible = true;
               observer.unobserve(entry.target);
             }
