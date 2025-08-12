@@ -1,7 +1,6 @@
 .partners-container {
   display: flex;
   justify-content: space-between;
-  background-color: #002b7f;
   background-image: url('../../../../assets/images/empresa/flechasAbajo.webp');
   background-repeat: no-repeat;
   background-position: center;

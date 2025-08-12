@@ -31,7 +31,7 @@
 
 .metrica {
 
-  background-color: rgba(255, 255, 255, 0.2);
+
   border-radius: 30px;
   text-align: center;
   padding-left: 20px;
@@ -42,7 +42,8 @@
 }
 
 .imgNumeros {
-  width: 200px;
+
+  height: 200px;
 }
 
 .letra {
@@ -66,9 +67,10 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 40px;
   color: white;
+  font-family: 'Kallisto_bold', sans-serif;
+
 }
 
 
@@ -85,4 +87,7 @@
     max-width: 100%;
 
   }
+
+
+
 }
