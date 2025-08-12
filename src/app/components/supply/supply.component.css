@@ -23,31 +23,14 @@
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: end;
-  justify-content: flex-end;
+  align-items: start;
+  justify-content: flex-start;
 }
 
 .franja-img img {
-  height: 380px;
+  height: 500px;
   object-fit: contain;
-  margin-right: 80px; /* <-- Ajusta este valor según lo que necesites */
-}
-
-.perforadora-img {
-  height: 380px;
-  object-fit: contain;
-  margin-right: 80px;
-  z-index: 1;
-}
-
-/* Imagen encima */
-.superpuesta {
-  position: absolute;
-  bottom: 40px; /* o el valor que necesites para ubicarla */
-  right: 100px; /* ajusta según tu diseño */
-  height: 150px; /* o el tamaño que prefieras */
-  z-index: 2;
-  pointer-events: none; /* evita que interfiera con clics si no es interactiva */
+  margin-right: 60px; /* <-- Ajusta este valor según lo que necesites */
 }
 
 .franja-texto {
@@ -76,20 +59,10 @@
 
 .icono-superior {
   position: absolute;
-  top: -130px; /* o 0, o ajusta según lo que necesites */
+  top: -60px; /* o 0, o ajusta según lo que necesites */
   left: 60%;
   transform: translateX(-50%);
   z-index: 3;
-}
-
-.icono-superior img {
-  width: 450px; /* ajusta el tamaño según el diseño */
-  height: auto;
-}
-
-.icono-superior .img2 {
-  width: 450px; /* ajusta el tamaño según el diseño */
-  height: auto;
 }
 
 .texto-superior-derecha {

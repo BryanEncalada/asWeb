@@ -1,10 +1,6 @@
-
 <nav class="navbar">
-
-
   <div class="logo">
-
-      <img src="assets/images/navbar/Logo.webp" />
+    <img src="assets/images/navbar/Logo.webp" />
   </div>
 
   <div class="menu-toggle" (click)="toggleMenu()">
@@ -13,13 +9,13 @@
     <span></span>
   </div>
 
-<ul class="nav-links" [class.active]="menuOpen">
-  <li><a href="#Inicio" (click)="closeMenu()">INICIO</a></li>
-   <li><a href="#Marca" (click)="closeMenu()">MARCA</a></li>
-      <li><a href="#Productos" (click)="closeMenu()">PRODUCTOS</a></li> 
-  <li><a href="#Servicios" (click)="closeMenu()">SERVICIOS</a></li>
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a href="#Inicio" (click)="closeMenu()">INICIO</a></li>
+    <li><a href="#Marca" (click)="closeMenu()">MARCA</a></li>
+    <li><a href="#Productos" (click)="closeMenu()">PRODUCTOS</a></li>
+    <li><a href="#Servicios" (click)="closeMenu()">SERVICIOS</a></li>
 
-  <li><a href="#Nosotros2" (click)="closeMenu()">CLIENTES</a></li>
-  <li><a href="#Contacto" (click)="closeMenu()">CONTACTO</a></li>
-</ul>
+    <!-- <li><a href="#Nosotros2" (click)="closeMenu()">CLIENTES</a></li> -->
+    <li><a href="#Contacto" (click)="closeMenu()">CONTACTO</a></li>
+  </ul>
 </nav>
