@@ -87,6 +87,11 @@
   height: auto;
 }
 
+.icono-superior .img2 {
+  width: 450px; /* ajusta el tamaño según el diseño */
+  height: auto;
+}
+
 .texto-superior-derecha {
   position: absolute;
   top: 180px;
