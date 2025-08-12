@@ -31,6 +31,8 @@
   height: 500px;
   object-fit: contain;
   margin-right: 60px; /* <-- Ajusta este valor según lo que necesites */
+  position: relative;
+  top: -50px;
 }
 
 .franja-texto {
