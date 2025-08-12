@@ -1,148 +1,81 @@
-.contenedor-productos {
-  width: 100%;
-  height: 100%;
+ .fondo {
+   width: 100%;
+   background: url("../../../../../src/assets/images/productos/FONDO.webp");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.823)),
-    url("../../../../../src/assets/images/productos/Recurso122.webp") no-repeat
-      center center;
-  background-size: cover;
-}
+ }
 
-.seccion-superior {
-  width: 100%;
-  text-align: left;
-}
+ .seccion-100 {
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 1.5rem;
+   display: inline-table;
 
-/* Subcontenedor para las 3 secciones de abajo */
+ }
 
-.subcontenedor-central {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  height: 70%;
-  overflow-y: auto;
-  scrollbar-width: auto;
-  scrollbar-color: #a0a0a0 #2c2c2c;
-  max-height: 100%;
-  margin-right: 100px;
-}
+ .contenedor {
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+ }
 
-.seccion-iconos {
-  width: 10%;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+ .seccion-10 {
+   width: 10%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   display: flex;
+ }
 
-  position: sticky;
-  top: 0;
-  align-self: flex-start; /* ayuda a que sticky funcione dentro del flexbox */
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-}
+ .seccion-90 {
+   width: 85%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   overflow-y: auto;
+   scrollbar-width: auto;
+   scrollbar-color: #a0a0a0 #2c2c2c;
+   padding-top: 850px;
 
-.icono {
-  filter: brightness(1.2);
-}
+ }
 
-.seccion-textos {
-  width: 50%;
+ .seccion-60 {
+   width: 60%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+ .seccion-40 {
+   width: 40%;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
 
-  overflow: visible;
-}
 
-.seccion-textos h1 {
-  font-size: 40px;
-  font-family: "Kallisto_ligth", sans-serif;
-  color: #ffffff;
-  padding-left: 150px;
-}
+ .lista-productos {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   color: #ffffff;
+ }
 
-.lista-productos {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+ .lista-productos li {
+   margin-bottom: 13px;
+   font-size: 26px;
+   font-family: "Kallisto_ligth", sans-serif;
+ }
 
-.lista-productos li {
-  margin-bottom: 13px;
-  font-size: 26px;
-  font-family: "Kallisto_ligth", sans-serif;
-}
 
-.seccion-imagen {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: sticky;
-  top: 0;
-  align-self: flex-end; /* ayuda a que sticky funcione dentro del flexbox */
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.grua-con-overlay {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.grua-img {
-  width: 55%;
-  height: auto;
-  display: block;
-}
-
-.icono-sobre-grua {
-  position: absolute;
-  top: 30%; /* Inicia desde la mitad de la imagen base */
-  left: 0;
-  width: 60%; /* Ajusta según lo necesario */
-  height: auto;
-  pointer-events: none;
-  transform: translateY(-50%); /* Opcional: para centrar desde el punto medio */
-}
-
-@media (max-width: 767px) {
-  .seccion-imagen {
-    display: none;
-  }
-
-  .seccion-iconos {
-    display: none;
-  }
-
-  .subcontenedor-central {
-    flex-direction: column;
-    height: auto;
-    max-height: 600px;
-    overflow-y: auto;
-    padding: 0; /* quitar padding lateral si quieres usar todo el ancho */
-    margin-right: 0; /* quitar margen derecho */
-  }
-
-  .seccion-textos {
-    width: 100%;
-    padding: 10px; /* opcional: espacio interno sin limitar ancho */
-    box-sizing: border-box; /* asegura que padding no sobrepase el 100% */
-  }
-
-  .seccion-superior {
-    img {
-      width: 150%;
-    }
-  }
-
-  .lista-productos li {
-    margin-bottom: 15px;
-    font-size: 20px;
-  }
-}
+ .seccion-40 img {
+   text-align: center;
+   width: 70%;
+   margin-top: 100px;
+ }

@@ -32,7 +32,7 @@ export class ImgRigthComponent implements AfterViewInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.checkScreenWidth();
-   }
+  }
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -63,7 +63,9 @@ export class ImgRigthComponent implements AfterViewInit {
   }
 
   private checkScreenWidth() {
-    this.isDesktop = window.innerWidth > 768;
+    if (typeof window !== 'undefined') {
+      this.isDesktop = window.innerWidth > 768;
+    }
   }
 
 }

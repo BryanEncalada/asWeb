@@ -7,23 +7,15 @@
 
   <div class="franja-container">
     <div class="franja-img">
-      <div class="icono-superior"> 
-        <img
-          #observedImg
-          [@slideInFromLeft]="isVisible ? 'visible' : 'hidden'"
-          src="assets/images/supply/Recurso 35.webp"
-          alt="Icono superior"
-          class="animated-img"
-        />
+      <div class="icono-superior">
+
+        <app-img-lef [img]="imgLeft" [mensaje]="txt"></app-img-lef>
+
       </div>
 
       <img src="assets/images/supply/Recurso 31.webp" alt="Perforadora" />
 
-      <img
-        class="superpuesta"
-        src="assets/images/supply/maquina.webp"
-        alt="Imagen encima"
-      />
+      <img class="superpuesta" src="assets/images/supply/maquina.webp" alt="Imagen encima" />
     </div>
 
     <div class="franja-texto">
@@ -36,13 +28,7 @@
     </div>
 
     <div class="icono-flecha">
-      <img
-        #observedRightImg
-        [@slideInFromRight]="isVisibleRight ? 'visible' : 'hidden'"
-        src="assets/images/supply/Recurso 34.webp"
-        alt="Flecha derecha"
-        class="animated-img"
-      />
+      <app-img-rigth [img]="img" [mensaje]="txt"></app-img-rigth>
     </div>
   </div>
 </div>

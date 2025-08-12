@@ -63,7 +63,8 @@ export class ImgLefComponent implements AfterViewInit {
   }
 
   private checkScreenWidth() {
-    this.isDesktop = window.innerWidth > 768;
+    if (typeof window !== 'undefined') {
+      this.isDesktop = window.innerWidth > 768;
+    }
   }
-
 }
