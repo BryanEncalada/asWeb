@@ -1,32 +1,31 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 
-import { CarouselModule } from 'ngx-owl-carousel-o';
+type Slide = {
+  image: string;
+  title1?: string;
+  title2?: string;
+  title3?: string;
+  description?: string;
+  alt?: string;
+};
 
 @Component({
   selector: 'app-slider',
-  imports: [CarouselModule, CommonModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './slider.component.html',
-  styleUrl: './slider.component.css',
+  styleUrls: ['./slider.component.css'], // 👈 plural
 })
-export class SliderComponent {
-  isBrowser: boolean;
-
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    this.isBrowser = isPlatformBrowser(this.platformId);
-  }
-
-  customOptions = {
-    loop: true, // 🔁 Repetir slides infinitamente
-    autoplay: true, // ▶️ Activar autoplay
-    autoplayTimeout: 4000, // ⏱️ Tiempo entre cada slide (en ms)
-    autoplayHoverPause: false, // 🚫 No detener al pasar el mouse
-    dots: true, // 🔘 Mostrar puntos
-    nav: false,
-    items: 1,
-  };
-
-  slides = [
+export class SliderComponent implements OnInit, OnDestroy {
+  // --- DATA ---
+  slides: Slide[] = [
     {
       image: 'assets/images/header/1-casagrande.png',
       title1: 'AMÉRICA',
@@ -115,7 +114,6 @@ export class SliderComponent {
       description:
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
-
     {
       image: 'assets/images/header/12-mudlogic.png',
       title1: 'EXPLORACIÓN',
@@ -125,4 +123,108 @@ export class SliderComponent {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
   ];
+
+  // --- CONFIGURACIÓN ---
+  autoplay = true;
+  intervalMs = 4500;
+  pauseOnHover = true;
+
+  // --- ESTADO ---
+  currentIndex = 0;
+
+  // --- INTERNOS ---
+  private timer: any = null;
+  private startX = 0;
+  private deltaX = 0;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  // Ciclo de vida
+  ngOnInit(): void {
+    if (this.autoplay && isPlatformBrowser(this.platformId)) {
+      this.startTimer();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.clearTimer();
+  }
+
+  // Controles
+  next(): void {
+    if (!this.slides.length) return;
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+    this.restartTimer();
+  }
+
+  prev(): void {
+    if (!this.slides.length) return;
+    this.currentIndex =
+      (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+    this.restartTimer();
+  }
+
+  goTo(i: number): void {
+    if (i < 0 || i >= this.slides.length) return;
+    this.currentIndex = i;
+    this.restartTimer();
+  }
+
+  // Autoplay
+  play(): void {
+    if (
+      this.autoplay &&
+      this.pauseOnHover &&
+      isPlatformBrowser(this.platformId)
+    ) {
+      this.startTimer();
+    }
+  }
+
+  pause(): void {
+    if (this.pauseOnHover) {
+      this.clearTimer();
+    }
+  }
+
+  private startTimer(): void {
+    this.clearTimer();
+    if (this.slides.length > 1) {
+      this.timer = setInterval(() => this.next(), this.intervalMs);
+    }
+  }
+
+  private clearTimer(): void {
+    if (this.timer) {
+      clearInterval(this.timer);
+      this.timer = null;
+    }
+  }
+
+  private restartTimer(): void {
+    if (this.autoplay && isPlatformBrowser(this.platformId)) {
+      this.startTimer();
+    }
+  }
+
+  // Gestos táctiles
+  onTouchStart(ev: TouchEvent): void {
+    this.startX = ev.touches[0].clientX;
+    this.deltaX = 0;
+    this.pause();
+  }
+
+  onTouchMove(ev: TouchEvent): void {
+    this.deltaX = ev.touches[0].clientX - this.startX;
+  }
+
+  onTouchEnd(): void {
+    const threshold = 40; // px
+    if (Math.abs(this.deltaX) > threshold) {
+      this.deltaX < 0 ? this.next() : this.prev();
+    }
+    this.play();
+    this.startX = 0;
+    this.deltaX = 0;
+  }
 }

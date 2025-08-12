@@ -1,24 +1,38 @@
-<owl-carousel-o
-  *ngIf="isBrowser"
-  [options]="customOptions"
-  style="background-color: antiquewhite"
+<section
+  class="slider"
+  (mouseenter)="pause()"
+  (mouseleave)="play()"
+  (touchstart)="onTouchStart($event)"
+  (touchmove)="onTouchMove($event)"
+  (touchend)="onTouchEnd()"
 >
-  <ng-container *ngFor="let slide of slides">
-    <ng-template carouselSlide>
-      <div
-        class="slider-item"
-        [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
-      >
-        <div class="hero-text">
-          <h1>
-            <span>AMÉRICA</span><br />
-            <span>{{ slide.title2 }}</span
-            ><br />
-            <span>{{ slide.title3 }}</span>
-          </h1>
-          <p>{{ slide.description }}</p>
-        </div>
+  <div
+    class="track"
+    [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+  >
+    <div class="slide" *ngFor="let s of slides; let i = index">
+      <img class="bg" [src]="s.image" [alt]="s.title1 || ''" />
+      <div class="hero-text">
+        <h1>
+          <span>{{ s.title1 }}</span
+          ><br />
+          <span>{{ s.title2 }}</span
+          ><br />
+          <span>{{ s.title3 }}</span>
+        </h1>
+        <p>{{ s.description }}</p>
       </div>
-    </ng-template>
-  </ng-container>
-</owl-carousel-o>
+    </div>
+  </div>
+
+  <button class="nav prev" (click)="prev()" aria-label="Anterior">‹</button>
+  <button class="nav next" (click)="next()" aria-label="Siguiente">›</button>
+
+  <div class="dots">
+    <button
+      *ngFor="let _ of slides; let i = index"
+      [class.active]="i === currentIndex"
+      (click)="goTo(i)"
+    ></button>
+  </div>
+</section>
