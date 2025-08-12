@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(to right, #000000 0%, #0c0f17 100%);
+  background: linear-gradient(to right, #000000 0%, #102235 100%);
   color: white;
   padding: 40px;
   font-family: "Kallisto_bold", sans-serif;
@@ -9,16 +9,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: 30px;
 
     .footer-column {
       flex: 1;
       min-width: 200px;
 
       h3 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         margin-bottom: 1.5rem;
-        font-weight: 700;
+        font-weight: 500;
       }
 
       ul {
@@ -26,8 +27,8 @@
         padding: 0;
 
         li {
-          margin-bottom: 1.5rem;
-          font-size: 1.4rem;
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
           font-weight: 400;
           font-family: "Kallisto_ligth", sans-serif;
         }
@@ -35,8 +36,9 @@
 
       .icons {
         margin: 15px 0;
-        display: flex; /* Alinea los íconos en fila */
+        display: flex;
         gap: 20px;
+        color: white;
 
         i {
           font-size: 2rem;
@@ -75,4 +77,30 @@
       }
     }
   }
+}
+
+/* Enlaces del footer en blanco */
+.footer a,
+.footer a:link,
+.footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Íconos sociales en blanco */
+.footer .icons a,
+.footer .icons a i {
+  color: #fff;
+}
+
+/* Enlaces de contacto en blanco */
+.footer .contact-info a,
+.footer .contact-info a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hover opcional */
+.footer a:hover {
+  opacity: 0.8;
 }

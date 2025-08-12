@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: clamp(320px, 56vw, 720px);
+  height: clamp(260px, 32vw, 560px); /* menos altura */
   background: #000;
 }
 
@@ -28,9 +28,9 @@
 
 .hero-text {
   position: absolute;
-  left: 6%;
-  right: 6%;
-  bottom: 10%;
+  left: 20%;
+  right: 20%;
+  bottom: 30%;
   color: #fff;
   max-width: min(92%, 900px);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -38,13 +38,16 @@
 
 .hero-text h1 {
   margin: 0 0 0.5rem;
-  font-size: clamp(24px, 5.5vw, 60px);
+  font-size: 40px;
   line-height: 1.04;
+  font-family: "Kallisto_ligth", sans-serif;
 }
 
 .hero-text p {
   margin: 0;
   font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.5;
+  /* font-family: "Kallisto_ligth", sans-serif; */
 }
 
 .nav {
