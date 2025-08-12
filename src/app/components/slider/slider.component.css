@@ -28,7 +28,7 @@
 
 .hero-text {
   position: absolute;
-  left: 20%;
+  left: 22%;
   right: 20%;
   bottom: 30%;
   color: #fff;
@@ -103,4 +103,14 @@
   .nav {
     display: none;
   }
+}
+
+.hero-title {
+  gap: 10px; /* espacio entre flechas y texto */
+}
+
+.hero-title .flechas {
+  height: 32px; /* ajusta según diseño */
+  width: auto;
+  margin-left: -40px;
 }
