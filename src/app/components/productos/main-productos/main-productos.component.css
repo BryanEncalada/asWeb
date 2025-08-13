@@ -178,8 +178,8 @@
    .lista-productos li {
      margin: 0px;
      padding: 0px;
-     margin-bottom: 1px;
-     border: 1px solid  aqua;
+     margin-bottom: 0.5px;
+     border: 0px solid  aqua;
      font-size: 15px;
    }
  }
