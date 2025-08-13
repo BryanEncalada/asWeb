@@ -53,3 +53,13 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .centered-text {
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-left: 20px;
+  }
+}
