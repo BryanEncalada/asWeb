@@ -117,7 +117,7 @@
 
 @media (max-width: 768px) {
   .hero-text h1 {
-    font-size: 24px; /* reduce tamaño del título */
+    font-size: 24px;
     line-height: 1.1;
   }
 
@@ -127,9 +127,9 @@
   }
 
   .hero-text {
-    left: 10%;
-    right: 10%;
-    bottom: 20%;
-    text-align: center; /* centra texto en móvil */
+    left: 2%;
+    right: 2%;
+    bottom: 10%;
+    text-align: center;
   }
 }

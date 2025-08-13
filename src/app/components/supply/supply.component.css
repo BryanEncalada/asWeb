@@ -92,10 +92,11 @@
   }
 
   .franja-texto {
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
     text-align: center;
-    max-width: 100%;
-    font-size: 1rem;
+    max-width: 90%;
+    font-size: 0.8rem;
   }
 
   .contenido-wrapper {
