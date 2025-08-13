@@ -63,6 +63,11 @@
 
 /* Adaptación a móviles: 1 columna */
 @media (max-width: 767px) {
+  .imgNumeros {
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
   .metricas {
     width: 100%;
   }
