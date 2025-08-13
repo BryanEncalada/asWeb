@@ -1,5 +1,20 @@
-import { Component, ViewChild, Inject, PLATFORM_ID, ElementRef, AfterViewInit, Input, HostListener, } from '@angular/core';
-import { trigger, style, state, transition, animate } from '@angular/animations';
+import {
+  Component,
+  ViewChild,
+  Inject,
+  PLATFORM_ID,
+  ElementRef,
+  AfterViewInit,
+  Input,
+  HostListener,
+} from '@angular/core';
+import {
+  trigger,
+  style,
+  state,
+  transition,
+  animate,
+} from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -9,7 +24,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './img-rigth.component.css',
   animations: [
     trigger('slideInFromRigth', [
-      state('hidden', style({ transform: 'translateX(-100%)', opacity: 0 })),
+      state('hidden', style({ transform: 'translateX(30%)', opacity: 0 })),
       state('visible', style({ transform: 'translateX(0)', opacity: 1 })),
       transition('hidden => visible', animate('2000ms ease-out')),
     ]),
@@ -17,12 +32,10 @@ import { isPlatformBrowser } from '@angular/common';
       state('hidden', style({ transform: 'translateY(50px)', opacity: 0 })),
       state('visible', style({ transform: 'translateY(0)', opacity: 1 })),
       transition('hidden => visible', animate('800ms ease-out')),
-    ])
-  ]
+    ]),
+  ],
 })
 export class ImgRigthComponent implements AfterViewInit {
-
-
   isVisible = false;
   isDesktop = true;
   @ViewChild('observedImg', { static: false }) observedImgRef!: ElementRef;
@@ -54,7 +67,6 @@ export class ImgRigthComponent implements AfterViewInit {
           observer.observe(this.observedImgRef.nativeElement);
         }, 100);
       }
-
     }
   }
 
@@ -68,5 +80,4 @@ export class ImgRigthComponent implements AfterViewInit {
       this.isDesktop = window.innerWidth > 768;
     }
   }
-
 }

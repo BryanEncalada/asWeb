@@ -24,7 +24,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './img-lef.component.css',
   animations: [
     trigger('slideInFromLeft', [
-      state('hidden', style({ transform: 'translateX(30%)', opacity: 0 })),
+      state('hidden', style({ transform: 'translateX(-30%)', opacity: 0 })),
       state('visible', style({ transform: 'translateX(0)', opacity: 1 })),
       transition('hidden => visible', animate('2000ms ease-out')),
     ]),
