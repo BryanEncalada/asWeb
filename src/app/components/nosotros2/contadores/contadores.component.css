@@ -30,8 +30,6 @@
 }
 
 .metrica {
-
-
   border-radius: 30px;
   text-align: center;
   padding-left: 20px;
@@ -43,7 +41,7 @@
 
 .imgNumeros {
 
-  height: 200px;
+  height: 180px;
 }
 
 .letra {
