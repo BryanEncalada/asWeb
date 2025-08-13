@@ -61,6 +61,20 @@
   font-family: "Kallisto_bold", sans-serif;
 }
 
+
+.franja-texto {
+  display: none;
+  max-width: 600px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 1;
+  color: white;
+  font-family: "Kallisto_ligth", sans-serif;
+}
+
 /* Adaptación a móviles: 1 columna */
 @media (max-width: 767px) {
   .imgNumeros {
@@ -83,5 +97,15 @@
     margin-left: 15px;
     color: white;
     font-family: "Kallisto_bold", sans-serif;
+  }
+
+  .titulo {
+
+    margin-bottom: 20px;
+  }
+
+  .franja-texto {
+    display: block;
+    margin-bottom: 50px;
   }
 }
