@@ -1,8 +1,12 @@
 <div #observedImg [@slideInFromRigth]="isDesktop ? (isVisible ? 'visible' : 'hidden') : ''"
-  [@sFromTopRigth]="!isDesktop ? (isVisible ? 'visible' : 'hidden') : ''" class="image-container">
-  <a [href]="url" target="_blank">
+  [@sFromTopRigth]="!isDesktop ? (isVisible ? 'visible' : 'hidden') : ''">
+  <a class="image-container" [href]="url" target="_blank">
     <img [src]="img" alt="Imagen descriptiva" />
 
-    <div class="centered-text">{{mensaje}}</div>
+    <div class="centered-text">
+      <div class="centrado">
+        {{mensaje}}
+      </div>
+    </div>
   </a>
 </div>

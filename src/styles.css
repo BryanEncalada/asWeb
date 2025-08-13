@@ -22,6 +22,12 @@
     format("opentype");
 }
 
+@font-face {
+  font-family: "ApparatRegular";
+  src: url("assets/fonts/fonnts.com-Apparat_Regular.otf")
+    format("opentype");
+}
+
 html,
 body {
   height: 100%;

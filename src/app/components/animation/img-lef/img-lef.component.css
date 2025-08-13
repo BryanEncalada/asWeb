@@ -7,24 +7,30 @@
 
 .image-container img {
   display: block;
-  /* Quita espacios extra debajo de la imagen */
   width: 100%;
-  /* o un ancho fijo si quieres */
   height: auto;
+}
+
+.centrado {
+  position: absolute;      /* o fixed si quieres que esté siempre en el centro de la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .centered-text {
   position: absolute;
-  left: 0;
-  right: 0;
+  top: 40%;
   bottom: 0;
-  margin-left: 30px;
+  left: 0;
   color: #fff;
   text-align: left;
-  width: 80%;
-
-  font-family: "Kallisto_bold", sans-serif;
-  font-size: 16px;
+  font-family: "ApparatRegular";
+  font-size: 12px;
+  margin-left: 10px;
+  width: 89%;
+  border: 0px solid blueviolet;
 }
 
 @media (max-width: 768px) {
@@ -33,33 +39,40 @@
     margin-left: 30px;
     margin-bottom: 1px;
     font-size: 11px;
+    border: 0px solid orange;
   }
+
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .centered-text {
-    width: 80%;
-    margin-bottom: 35px;
-    margin-left: 20px;
+    width: 82%;
+    margin-left: 16px;
     font-size: 16px;
+    border: 0px solid green;
   }
+
+
 }
 
 @media (min-width: 1400px) {
   .centered-text {
     width: 70%;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    font-size: 20px;
+    font-size: 18px;
+    border: 0px solid blue;
+
   }
+
+
 }
 
 @media (max-width: 576px) {
   .centered-text {
     font-size: 12px;
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 35px;
+    width: 80%;
     margin-left: 20px;
+    border: 0px solid red;
+
   }
 }
