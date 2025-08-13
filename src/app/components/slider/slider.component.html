@@ -13,7 +13,12 @@
     <div class="slide" *ngFor="let s of slides; let i = index">
       <img class="bg" [src]="s.image" [alt]="s.title1 || ''" />
       <div class="hero-text">
-        <h1>
+        <h1 class="hero-title">
+          <img
+            src="assets/images/header/flechas-azules.webp"
+            alt="Flechas"
+            class="flechas"
+          />
           <span>AMÉRICA</span><br />
           <span>SUR</span><br />
           <span>INTERNACIONAL</span>

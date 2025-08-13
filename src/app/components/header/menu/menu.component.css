@@ -49,7 +49,7 @@
   box-shadow: 2px 2px 5px #000;
   border-radius: 10px;
   transition: background-color 0.3s;
-  font-family: 'Kallisto_ligth', sans-serif;
+  font-family: "Kallisto_ligth", sans-serif;
   /* Tipo de letra */
   font-size: 14px;
   /* Tamaño de la letra */
@@ -62,6 +62,10 @@
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
+  }
+
+  .navbar .logo img {
+    margin-left: 120;
   }
 
   .navbar .menu-toggle {
@@ -94,5 +98,17 @@
   .navbar .nav-links li a {
     display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar .logo img {
+    margin-left: 0; /* Ajuste para pantallas grandes */
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar .logo img {
+    margin-left: -220px; /* Ajuste máximo */
   }
 }
