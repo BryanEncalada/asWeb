@@ -29,6 +29,7 @@ export class ImgLefComponent implements AfterViewInit {
 
   @Input() mensaje!: string;
   @Input() img!: string;
+  @Input() url!: string;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.checkScreenWidth();

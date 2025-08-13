@@ -3,7 +3,7 @@
   <div class="partners-column-left">
     <div class="partner-card" *ngFor="let partner of partnersLeft; let i = index">
 
-      <app-img-lef [img]="partner.image" [mensaje]="partner.description"></app-img-lef>
+      <app-img-lef [img]="partner.image" [mensaje]="partner.description" [url]="partner.url" ></app-img-lef>
 
     </div>
   </div>
@@ -12,7 +12,7 @@
   <div class="partners-column-right">
     <div class="partner-card" *ngFor="let partner of partnersRight; let i = index">
 
-      <app-img-rigth [img]="partner.image" [mensaje]="partner.description"></app-img-rigth>
+      <app-img-rigth [img]="partner.image" [mensaje]="partner.description" [url]="partner.url" ></app-img-rigth>
 
     </div>
   </div>
