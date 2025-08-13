@@ -110,6 +110,13 @@
    .lista-productos li {
      border: 1px solid blue;
    }
+
+ .seccion-90 {
+   padding-top: 650px;
+
+ }
+
+
  }
 
  @media (max-width: 576px) {
@@ -123,7 +130,7 @@
    }
 
    .seccion-90 {
-     padding-top: 260px;
+     padding-top: 0px;
      width: 95%;
    }
 
@@ -156,7 +163,7 @@
    }
 
    .seccion-90 {
-     padding-top: 160px;
+     padding-top: 260px;
      width: 95%;
    }
 
@@ -172,7 +179,7 @@
      margin: 0px;
      padding: 0px;
      margin-bottom: 2px;
-     border: 1px solid chocolate;
+     border: 1px solid  aqua;
      font-size: 15px;
    }
  }
