@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Apparat_Regular';
-  src: url('../../../../assets/fonts/fonnts.com-Apparat_Regular.otf') format('opentype');
+  font-family: "Apparat_Regular";
+  src: url("../../../../assets/fonts/fonnts.com-Apparat_Regular.otf")
+    format("opentype");
 }
 
 .contenido {
@@ -10,7 +11,7 @@
 }
 
 .titulo {
-  font-family: 'Kallisto_bold', sans-serif;
+  font-family: "Kallisto_bold", sans-serif;
   font-size: 40px;
   font-weight: bold;
   padding-top: 30px;
@@ -26,7 +27,6 @@
   width: 100%;
   /* Opcional: para que ocupe toda la altura de la pantalla */
   border: 0px solid red;
-
 }
 
 .metrica {
@@ -36,11 +36,9 @@
   padding-right: 20px;
   margin-right: 5%;
   margin-left: 5%;
-
 }
 
 .imgNumeros {
-
   height: 180px;
 }
 
@@ -50,12 +48,11 @@
   display: flex;
   align-items: center;
   /* centra verticalmente */
-  font-family: 'Kallisto_bold', sans-serif;
+  font-family: "Kallisto_bold", sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: white;
   line-height: 1.2;
-
 }
 
 .letraSub {
@@ -67,25 +64,25 @@
   margin-bottom: 50px;
   font-size: 40px;
   color: white;
-  font-family: 'Kallisto_bold', sans-serif;
-
+  font-family: "Kallisto_bold", sans-serif;
 }
-
 
 /* Adaptación a móviles: 1 columna */
 @media (max-width: 767px) {
-
   .metricas {
     width: 100%;
   }
 
   .metrica {
-
     flex: 0 0 100%;
     max-width: 100%;
-
   }
 
-
-
+  .letraSub {
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: white;
+    font-family: "Kallisto_bold", sans-serif;
+  }
 }
