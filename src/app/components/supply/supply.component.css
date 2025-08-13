@@ -54,11 +54,6 @@
   z-index: 3;
 }
 
-.icono-flecha img {
-  width: 450px;
-  height: auto;
-}
-
 .icono-superior {
   position: absolute;
   top: -60px; /* o 0, o ajusta según lo que necesites */
