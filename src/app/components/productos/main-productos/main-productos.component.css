@@ -69,8 +69,9 @@
 
  .lista-productos li {
    margin-bottom: 13px;
-   font-size: 26px;
+   font-size: 20px;
    font-family: "Kallisto_ligth", sans-serif;
+    border: 1px solid yellow;
  }
 
 
@@ -78,4 +79,100 @@
    text-align: center;
    width: 70%;
    margin-top: 100px;
+ }
+
+
+
+ @media (max-width: 768px) {
+
+
+   .lista-productos li {
+     border: 1px solid orange;
+   }
+
+
+ }
+
+ @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+   .seccion-90 {
+     padding-top: 980px;
+     width: 99%;
+   }
+
+   .lista-productos li {
+
+     border: 1px solid green;
+   }
+ }
+
+ @media (min-width: 1400px) {
+   .lista-productos li {
+     border: 1px solid blue;
+   }
+ }
+
+ @media (max-width: 576px) {
+
+   .icono {
+     display: none;
+   }
+
+   .seccion-10 {
+     width: 0%;
+   }
+
+   .seccion-90 {
+     padding-top: 260px;
+     width: 95%;
+   }
+
+   .seccion-60 {
+     width: 100%;
+   }
+
+   .seccion-40 {
+     width: 0%;
+   }
+
+   .lista-productos li {
+     margin: 0px;
+     padding: 0px;
+     margin-bottom: 2px;
+     border: 1px solid red;
+     font-size: 15px;
+   }
+ }
+
+
+ @media (max-width: 428px) {
+
+   .icono {
+     display: none;
+   }
+
+   .seccion-10 {
+     width: 0%;
+   }
+
+   .seccion-90 {
+     padding-top: 160px;
+     width: 95%;
+   }
+
+   .seccion-60 {
+     width: 100%;
+   }
+
+   .seccion-40 {
+     width: 0%;
+   }
+
+   .lista-productos li {
+     margin: 0px;
+     padding: 0px;
+     margin-bottom: 2px;
+     border: 1px solid chocolate;
+     font-size: 15px;
+   }
  }

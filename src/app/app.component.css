@@ -1,0 +1,9 @@
+.fondoMain {
+  background: url('/assets/images/empresa/FONDO.webp');
+  background-repeat: repeat;
+  /* o no-repeat si quieres que no se repita */
+  background-size: cover;
+  /* ajusta el fondo a toda el área */
+  background-position: center;
+  /* lo centra */
+}

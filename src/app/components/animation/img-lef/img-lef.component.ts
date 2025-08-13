@@ -55,7 +55,7 @@ export class ImgLefComponent implements AfterViewInit {
         const observer = new IntersectionObserver(
           ([entry]) => {
             if (entry.isIntersecting) {
-              console.log('Visible left');
+
               this.isVisible = true;
               observer.unobserve(entry.target);
             }
