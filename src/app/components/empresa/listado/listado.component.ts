@@ -26,7 +26,7 @@ export class ListadoComponent {
     },
     {
       image: 'assets/images/empresa/sreps.webp',
-      url: 'www.sreps.com.au/',
+      url: 'https://www.sreps.com.au/',
       description: 'Martillos y Brocas de Circulación Inversa y DTH utilizados específicamente en los sectores de Exploración Minera y Control de Leyes de Minerales.'
     },
     {

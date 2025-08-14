@@ -9,6 +9,7 @@ import {
 
 type Slide = {
   image: string;
+  imageApp: string;
   title1?: string;
   title2?: string;
   title3?: string;
@@ -24,10 +25,17 @@ type Slide = {
   styleUrls: ['./slider.component.css'], // 👈 plural
 })
 export class SliderComponent implements OnInit, OnDestroy {
+
+
+  isMobileWidth(): boolean {
+    return window.innerWidth <= 768; // puedes ajustar el breakpoint
+  }
+
   // --- DATA ---
   slides: Slide[] = [
     {
       image: 'assets/images/header/1-casagrande.png',
+      imageApp: 'assets/images/header/1-casagrandeapp.webp',
       title1: 'AMÉRICA',
       title2: 'SUR',
       title3: 'INTERNACIONAL',
@@ -36,6 +44,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/2-nca.png',
+      imageApp: 'assets/images/header/2-ncaapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -44,6 +53,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/3-progradex.png',
+      imageApp: 'assets/images/header/3-progradexapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -52,6 +62,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/4-sreps.png',
+      imageApp: 'assets/images/header/4-srepsapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -60,6 +71,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/5-harlsan.png',
+      imageApp: 'assets/images/header/5-harlsanapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -68,6 +80,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/6-cme.png',
+      imageApp: 'assets/images/header/6-cmeapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -76,6 +89,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/7-hd.png',
+      imageApp: 'assets/images/header/7-hdapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -84,6 +98,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/8-eurodrill.png',
+      imageApp: 'assets/images/header/8-eurodrillapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -92,6 +107,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/9-sundril.png',
+      imageApp: 'assets/images/header/9-sundrilapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -100,6 +116,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/10-matrix.png',
+      imageApp: 'assets/images/header/10-matrixapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -108,6 +125,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/11-bestolife.png',
+      imageApp: 'assets/images/header/11-bestolifeapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -116,6 +134,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       image: 'assets/images/header/12-mudlogic.png',
+      imageApp: 'assets/images/header/12-mudlogicapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
       title3: 'PERFORACIÓN',
@@ -137,7 +156,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   private startX = 0;
   private deltaX = 0;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   // Ciclo de vida
   ngOnInit(): void {
