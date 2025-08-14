@@ -177,8 +177,10 @@
 
    .lista-productos li {
      margin: 0px;
+
      padding: 0px;
      margin-bottom: 0.5px;
+     margin-left: 2rem;
      border: 0px solid  aqua;
      font-size: 15px;
    }
