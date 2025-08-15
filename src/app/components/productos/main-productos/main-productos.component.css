@@ -17,6 +17,11 @@
 
  }
 
+ .seccion-100 h1 {
+   font-family: "Kallisto_bold";
+   margin-left: 50px;
+ }
+
  .contenedor {
    display: flex;
    flex-direction: row;
@@ -70,15 +75,15 @@
  .lista-productos li {
    margin-bottom: 13px;
    font-size: 20px;
-   font-family: "Kallisto_ligth", sans-serif;
-    border: 0px solid yellow;
+   font-family: "Kallisto_ligth";
+   border: 0px solid yellow;
  }
 
 
  .seccion-40 img {
    text-align: center;
    width: 70%;
-   margin-top: 100px;
+   border: 0px solid yellow;
  }
 
 
@@ -111,10 +116,10 @@
      border: 0px solid blue;
    }
 
- .seccion-90 {
-   padding-top: 650px;
+   .seccion-90 {
+     padding-top: 650px;
 
- }
+   }
 
 
  }
@@ -181,7 +186,7 @@
      padding: 0px;
      margin-bottom: 0.5px;
      margin-left: 2rem;
-     border: 0px solid  aqua;
+     border: 0px solid aqua;
      font-size: 15px;
    }
  }
