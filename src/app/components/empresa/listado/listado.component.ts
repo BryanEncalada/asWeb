@@ -1,85 +1,91 @@
 import { CommonModule, NgFor } from '@angular/common';
-import {  Component} from '@angular/core';
-import { ImgLefComponent } from "../../animation/img-lef/img-lef.component";
-import { ImgRigthComponent } from "../../animation/img-rigth/img-rigth.component";
-
+import { Component } from '@angular/core';
+import { ImgLefComponent } from '../../animation/img-lef/img-lef.component';
+import { ImgRigthComponent } from '../../animation/img-rigth/img-rigth.component';
 
 @Component({
   selector: 'app-listado',
   imports: [NgFor, CommonModule, ImgLefComponent, ImgRigthComponent],
   standalone: true,
   templateUrl: './listado.component.html',
-  styleUrl: './listado.component.css'
+  styleUrl: './listado.component.css',
 })
 export class ListadoComponent {
-
   partnersLeft = [
     {
       image: 'assets/images/empresa/progradex.webp',
       url: 'https://progradex.com/',
-      description: 'Ciclones de muestreo y colectores de polvo. Muestras más representativas de manera más eficiente y rentable, garantizando la protección de los operadores y medio ambiente.'
+      description:
+        'Ciclones de muestreo y colectores de polvo. Muestras más representativas de manera más eficiente y rentable, garantizando la protección de los operadores y medio ambiente.',
     },
     {
       image: 'assets/images/empresa/nca.webp',
       url: 'https://nationalcompressedair.com/',
-      description: 'Soluciones innovadoras de aire comprimido y nitrógeno (Compresores y Boosters) para perforación sísmica terrestre, estudios sísmicos marinos, exploración mineral y exploración subterránea; así como aplicaciones de gas y petróleo.'
+      description:
+        'Soluciones innovadoras de aire comprimido y nitrógeno (Compresores y Boosters) para perforación sísmica terrestre, estudios sísmicos marinos, exploración mineral y exploración subterránea; así como aplicaciones de gas y petróleo.',
     },
     {
       image: 'assets/images/empresa/sreps.webp',
       url: 'https://www.sreps.com.au/',
-      description: 'Martillos y Brocas de Circulación Inversa y DTH utilizados específicamente en los sectores de Exploración Minera y Control de Leyes de Minerales.'
+      description:
+        'Martillos y Brocas de Circulación Inversa y DTH utilizados específicamente en los sectores de Exploración Minera y Control de Leyes de Minerales.',
     },
     {
       image: 'assets/images/empresa/harlsan.webp',
       url: 'https://www.harlsan.com.au/',
-      description: 'Barras de Perforación de Circulación Inversa, Sub Estabilizadores en Espiral y accesorios RC de primera calidad fabricados con materiales premium.'
+      description:
+        'Barras de Perforación de Circulación Inversa, Sub Estabilizadores en Espiral y accesorios RC de primera calidad fabricados con materiales premium.',
     },
     {
       image: 'assets/images/empresa/eurodrill.webp',
       url: 'https://www.eurodrill.de/',
-      description: 'Cabezales Serie-X, cabezales de rotación vibratorios, cabezales de rotación para perforación diamantina, cabezales de rotación eléctricos (E-Heads), cabezales de rotación para perforadoras de pilotes y sistema de perforación de doble cabezal.'
+      description:
+        'Cabezales Serie-X, cabezales de rotación vibratorios, cabezales de rotación para perforación diamantina, cabezales de rotación eléctricos (E-Heads), cabezales de rotación para perforadoras de pilotes y sistema de perforación de doble cabezal.',
     },
     {
       image: 'assets/images/empresa/hd.webp',
       url: 'https://www.hdengineering.com/',
-      description: 'Diseño, ingeniería y fabricación de equipos y herramientas para la industria de la construcción, minería, pozos de agua y exploración (Extractores de casing y sistema de perforación overburden para terrenos sin consolidar).'
-    }
+      description:
+        'Diseño, ingeniería y fabricación de equipos y herramientas para la industria de la construcción, minería, pozos de agua y exploración (Extractores de casing y sistema de perforación overburden para terrenos sin consolidar).',
+    },
   ];
 
   partnersRight = [
     {
       image: 'assets/images/empresa/casagrande.webp',
       url: 'https://casagrandegroup.com/',
-      description: 'Piloteras, perforadoras universales, perforadoras sobre orugas, máquinas para muro diafragma y jet grouting, tuneladoras y herramientas de perforación para la industria de construcción.'
+      description:
+        'Piloteras, perforadoras universales, perforadoras sobre orugas, máquinas para muro diafragma y jet grouting, tuneladoras y herramientas de perforación para la industria de construcción.',
     },
     {
       image: 'assets/images/empresa/sundril.webp',
       url: 'https://www.sundril.com/',
-      description: 'Barras de perforación diamantina y core barrels con las mejores materias prima, respaldados por estrictos procedimientos de inspección de calidad.'
+      description:
+        'Barras de perforación diamantina y core barrels con las mejores materias prima, respaldados por estrictos procedimientos de inspección de calidad.',
     },
     {
       image: 'assets/images/empresa/mudlogic.webp',
       url: 'https://www.mudlogic.com.au/',
-      description: 'Fluidos de lubricación de calidad superior para martillos de fondo. La fábrica cuenta con un activo programa de investigación y desarrollo, lo que les ha permitido posicionarse en el mundo con una amplia gama de productos.'
+      description:
+        'Aceites para martillos neumáticos y fluidos de perforación de calidad superior. La fábrica cuenta con un activo programa de investigación y desarrollo, lo que les ha permitido posicionarse en el mundo con una amplia gama de productos.',
     },
     {
       image: 'assets/images/empresa/cme.webp',
       url: 'https://www.cme.se/',
-      description: 'Robots, pistolas manuales y copas diamantadas para el afilado de insertos de tungsteno. Esta fábrica ha implementado innumerables sistemas de rectificado para operaciones de perforación de roca.'
+      description:
+        'Robots, pistolas manuales y copas diamantadas para el afilado de insertos de tungsteno. Esta fábrica ha implementado innumerables sistemas de rectificado para operaciones de perforación de roca.',
     },
     {
       image: 'assets/images/empresa/bestolife.webp',
       url: 'https://bestolife.com/',
-      description: 'Compuestos premium para reducir el desgaste de las roscas en la industria de perforación (minería, petróleo y gas, construcción). Pueden sellar, lubricar y proteger para mantener sus propiedades en condiciones extremas de temperatura. Son productos amigables con el medio ambiente.'
+      description:
+        'Compuestos premium para reducir el desgaste de las roscas en la industria de perforación (minería, petróleo y gas, construcción). Pueden sellar, lubricar y proteger para mantener sus propiedades en condiciones extremas de temperatura. Son productos amigables con el medio ambiente.',
     },
     {
       image: 'assets/images/empresa/matrix.webp',
       url: 'https://matrixdrillingproducts.com/',
-      description: 'Fabricación de Barras RC, convencionales, swivels, adaptadores y accesorios. Se caracterizan por tener acero certificado, soldadura en plasma y por fricción, así como tratamiento térmico especializado.'
-    }
+      description:
+        'Fabricación de Barras RC, convencionales, swivels, adaptadores y accesorios. Se caracterizan por tener acero certificado, soldadura en plasma y por fricción, así como tratamiento térmico especializado.',
+    },
   ];
-
-
-
-
 }
