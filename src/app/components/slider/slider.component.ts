@@ -25,8 +25,6 @@ type Slide = {
   styleUrls: ['./slider.component.css'], // 👈 plural
 })
 export class SliderComponent implements OnInit, OnDestroy {
-
-
   isMobileWidth(): boolean {
     return window.innerWidth <= 768; // puedes ajustar el breakpoint
   }
@@ -70,7 +68,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/5-harlsan.png',
+      image: 'assets/images/header/5-harlsan.webp',
       imageApp: 'assets/images/header/5-harlsanapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -156,7 +154,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   private startX = 0;
   private deltaX = 0;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   // Ciclo de vida
   ngOnInit(): void {
