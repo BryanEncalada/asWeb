@@ -32,7 +32,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   // --- DATA ---
   slides: Slide[] = [
     {
-      image: 'assets/images/header/1-casagrande.png',
+      image: 'assets/images/header/1-casagrande.webp',
       imageApp: 'assets/images/header/1-casagrandeapp.webp',
       title1: 'AMÉRICA',
       title2: 'SUR',
@@ -41,7 +41,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Suministramos equipos, herramientas y compuestos para perforación desde 1996. Nuestros clientes: Minería, Exploración, Construcción y Pozos de Agua.',
     },
     {
-      image: 'assets/images/header/2-nca.png',
+      image: 'assets/images/header/2-nca.webp',
       imageApp: 'assets/images/header/2-ncaapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -50,7 +50,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/3-progradex.png',
+      image: 'assets/images/header/3-progradex.webp',
       imageApp: 'assets/images/header/3-progradexapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -59,7 +59,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/4-sreps.png',
+      image: 'assets/images/header/4-sreps.webp',
       imageApp: 'assets/images/header/4-srepsapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -77,7 +77,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/6-cme.png',
+      image: 'assets/images/header/6-cme.webp',
       imageApp: 'assets/images/header/6-cmeapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -86,7 +86,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/7-hd.png',
+      image: 'assets/images/header/7-hd.webp',
       imageApp: 'assets/images/header/7-hdapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -95,7 +95,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/8-eurodrill.png',
+      image: 'assets/images/header/8-eurodrill.webp',
       imageApp: 'assets/images/header/8-eurodrillapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -104,7 +104,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/9-sundril.png',
+      image: 'assets/images/header/9-sundril.webp',
       imageApp: 'assets/images/header/9-sundrilapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -113,7 +113,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/10-matrix.png',
+      image: 'assets/images/header/10-matrix.webp',
       imageApp: 'assets/images/header/10-matrixapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -122,7 +122,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/11-bestolife.png',
+      image: 'assets/images/header/11-bestolife.webp',
       imageApp: 'assets/images/header/11-bestolifeapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
@@ -131,7 +131,7 @@ export class SliderComponent implements OnInit, OnDestroy {
         'Soluciones para proyectos mineros y de agua. Equipamiento de calidad mundial.',
     },
     {
-      image: 'assets/images/header/12-mudlogic.png',
+      image: 'assets/images/header/12-mudlogic.webp',
       imageApp: 'assets/images/header/12-mudlogicapp.webp',
       title1: 'EXPLORACIÓN',
       title2: 'Y',
