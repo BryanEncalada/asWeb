@@ -1,0 +1,141 @@
+/* === CONTENEDOR DEL COMPONENTE === */
+:host {
+  display: block;
+  background: transparent;
+  padding: 1.5rem 200px; /* <-- margen derecho e izquierdo de 100px */
+}
+
+/* === PANEL PRINCIPAL === */
+.form-panel {
+  background: #efefef;
+  border-radius: 0 !important; /* cuadrado total */
+  padding: 2rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+
+  /* Marca de agua opcional */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/assets/img/watermark.svg") center/320px no-repeat;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+}
+
+/* === TÍTULO === */
+.form-title {
+  font-family: "Kallisto", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: #000;
+}
+
+/* === LABELS === */
+.form-label {
+  font-family: "Kallisto_bold", system-ui, sans-serif;
+
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.35rem;
+}
+
+/* === INPUTS, SELECTS, TEXTAREA === */
+.form-control,
+.form-select {
+  font-family: "Kallisto", system-ui;
+  font-weight: 300;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 0 !important; /* cuadrado total */
+  height: 42px;
+  padding: 0.4rem 0.7rem;
+  color: #222;
+  width: 100%;
+}
+
+textarea.form-control {
+  min-height: 60px;
+  border-radius: 0 !important;
+}
+
+/* === FOCUS === */
+.form-control:focus,
+.form-select:focus {
+  border-color: #8f8f8f;
+  box-shadow: none; /* sin brillo */
+}
+
+/* === MENSAJES DE ERROR === */
+.invalid-msg {
+  font-size: 0.82rem;
+  color: #b00020;
+  margin-top: 0.2rem;
+}
+
+/* === BOTÓN ENVIAR === */
+.btn-enviar {
+  font-family: "Kallisto", system-ui;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: #6b6f74;
+  border: none;
+  border-radius: 0 !important; /* cuadrado */
+  padding: 0.65rem 1.5rem;
+
+  display: block;
+  margin: 1.5rem auto 0; /* centra horizontalmente y agrega espacio arriba */
+}
+
+.btn-enviar:hover {
+  background: #5a5d61;
+}
+
+/* === SEPARACIÓN DE CAMPOS === */
+.form-group {
+  margin-bottom: 0.85rem;
+}
+
+/* === ASTERISCO DE OBLIGATORIO === */
+.required::after {
+  content: " *";
+  color: #b00020;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  :host {
+    padding: 1.5rem 40px; /* reduce márgenes laterales */
+  }
+}
+
+@media (max-width: 576px) {
+  :host {
+    padding: 1rem 20px;
+  }
+}
+
+::placeholder,
+.form-select,
+.form-control::placeholder {
+  font-family: "Kallisto_ligth", system-ui, sans-serif;
+  font-weight: normal; /* la fuente ya es light */
+  color: #9b9b9b !important;
+  letter-spacing: 0.5px;
+}
+
+.form-heading {
+  font-family: "Kallisto_bold", system-ui, sans-serif; /* usa tu fuente personalizada */
+  font-weight: normal; /* la fuente ya es bold */
+  text-align: center; /* centra horizontalmente */
+  font-size: 2rem; /* tamaño grande del título */
+  color: #000; /* color del texto */
+  letter-spacing: 0.06em; /* espaciado de letras para estilo elegante */
+  margin-bottom: 1.5rem; /* espacio debajo del título */
+  padding-top: 50px;
+}

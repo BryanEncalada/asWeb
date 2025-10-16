@@ -1,0 +1,176 @@
+<h1 class="form-heading">COTIZAR</h1>
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <div class="container-fluid">
+    <!-- 1) Empresa (col-12) -->
+    <div class="row g-3">
+      <div class="col-12">
+        <label class="form-label required" for="empresa">Empresa</label>
+        <input
+          id="empresa"
+          type="text"
+          class="form-control"
+          placeholder="Nombre"
+          formControlName="empresa"
+        />
+        <div class="invalid-msg" *ngIf="hasErr('empresa')">
+          Campo obligatorio.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2) Sector (col-12) -->
+    <div class="row g-3">
+      <div class="col-12">
+        <label class="form-label required" for="sector">Sector</label>
+        <select id="sector" class="form-select" formControlName="sector">
+          <option value="" disabled selected>Seleccionar</option>
+          <option *ngFor="let s of sectores" [value]="s">{{ s }}</option>
+        </select>
+        <div class="invalid-msg" *ngIf="hasErr('sector')">
+          Selecciona un sector.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3) Todo lo demás a dos columnas (col-12 col-md-6) -->
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="direccion">Dirección</label>
+        <input
+          id="direccion"
+          type="text"
+          class="form-control"
+          placeholder="Dirección"
+          formControlName="direccion"
+        />
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="ruc">RUC</label>
+        <input
+          id="ruc"
+          type="text"
+          class="form-control"
+          placeholder="Número"
+          formControlName="ruc"
+        />
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label required" for="cel">Celular</label>
+        <input
+          id="cel"
+          type="tel"
+          class="form-control"
+          placeholder="Celular"
+          formControlName="celular"
+        />
+        <div class="invalid-msg" *ngIf="hasErr('celular')">
+          Ingresa tu celular.
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label required" for="nombres">Nombres</label>
+        <input
+          id="nombres"
+          type="text"
+          class="form-control"
+          placeholder="Nombres"
+          formControlName="nombres"
+        />
+        <div class="invalid-msg" *ngIf="hasErr('nombres')">
+          Campo obligatorio.
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label required" for="apellidos">Apellidos</label>
+        <input
+          id="apellidos"
+          type="text"
+          class="form-control"
+          placeholder="Apellidos"
+          formControlName="apellidos"
+        />
+        <div class="invalid-msg" *ngIf="hasErr('apellidos')">
+          Campo obligatorio.
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="tipoDoc"
+          >Tipo de documento de identidad</label
+        >
+        <select id="tipoDoc" class="form-select" formControlName="tipoDoc">
+          <option value="" selected>Seleccionar</option>
+          <option *ngFor="let t of tiposDocumento" [value]="t">{{ t }}</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label required" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          formControlName="email"
+        />
+        <div class="invalid-msg" *ngIf="hasErr('email', 'email')">
+          Formato de email no válido.
+        </div>
+        <div
+          class="invalid-msg"
+          *ngIf="hasErr('email') && !hasErr('email', 'email')"
+        >
+          Campo obligatorio.
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="numDoc">Número de documento</label>
+        <input
+          id="numDoc"
+          type="text"
+          class="form-control"
+          placeholder="Número"
+          formControlName="numDoc"
+        />
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="cargo">Cargo</label>
+        <input
+          id="cargo"
+          type="text"
+          class="form-control"
+          placeholder="Cargo"
+          formControlName="cargo"
+        />
+      </div>
+
+      <!-- Comentarios (si lo quieres a 2 columnas, deja col-12 col-md-6; 
+           si lo prefieres ancho completo como en el mockup, usa col-12) -->
+      <div class="col-12">
+        <label class="form-label" for="comentarios">Comentarios</label>
+        <textarea
+          id="comentarios"
+          class="form-control"
+          placeholder="Comentarios"
+          formControlName="comentarios"
+        ></textarea>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row mt-3 align-items-center">
+      <div class="col-12 col-md-6">
+        <small>* Campos obligatorios</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 text-md-end mt-3 mt-md-0">
+    <button type="submit" class="btn btn-enviar">ENVIAR</button>
+  </div>
+</form>

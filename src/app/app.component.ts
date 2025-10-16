@@ -8,6 +8,7 @@ import { SupplyComponent } from './components/supply/supply.component';
 import { MainProductosComponent } from './components/productos/main-productos/main-productos.component';
 import { ListadoComponent } from './components/empresa/listado/listado.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { Meta, Title } from '@angular/platform-browser';
     MainProductosComponent,
     SupplyComponent,
     ListadoComponent,
+    FormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
