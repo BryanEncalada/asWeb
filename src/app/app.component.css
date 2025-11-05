@@ -1,9 +1,69 @@
+/* Fondo (lo que ya tenías) */
 .fondoMain {
-  background: url('/assets/images/empresa/FONDO.webp');
+  background: url("/assets/images/empresa/FONDO.webp");
   background-repeat: repeat;
-  /* o no-repeat si quieres que no se repita */
   background-size: cover;
-  /* ajusta el fondo a toda el área */
   background-position: center;
-  /* lo centra */
+}
+
+/* Botón flotante: estilos base + posición de referencia para el tooltip */
+.btn-flotante-contacto {
+  position: fixed;
+  right: 30px;
+  bottom: 44px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  z-index: 1000;
+  background: #00bfa6;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+  position: relative; /* ¡clave para el tooltip! */
+}
+.btn-flotante-contacto:hover {
+  transform: scale(1.08);
+  background: #009f8a;
+}
+
+/* Tooltip oculto por defecto */
+.btn-flotante-contacto .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 90px; /* encima del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Flecha del tooltip */
+.btn-flotante-contacto .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Mostrar tooltip al pasar el cursor */
+.btn-flotante-contacto:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

@@ -41,4 +41,31 @@ export class AppComponent {
         'Suministramos plataformas de perforación, equipos auxiliares, herramientas, compuestos y aceites para martillos neumáticos desde 1996.',
     });
   }
+
+  closeModal(): void {
+    console.log('[APP] closeModal()');
+    const modal = document.getElementById('contactoModal');
+    if (!modal) {
+      console.log('[APP] ❌ No se encontró #contactoModal');
+      return;
+    }
+    modal.style.display = 'none';
+    console.log('[APP] ✅ Modal cerrado (display:none)');
+  }
+  isModalOpen = false;
+
+  openContacto(): void {
+    console.log('[MENU] Click en CONTACTO');
+
+    const modal = document.getElementById('contactoModal');
+    if (!modal) {
+      console.log(
+        '[MENU] ❌ No se encontró el elemento #contactoModal en el DOM'
+      );
+      return;
+    }
+
+    modal.style.display = 'flex';
+    console.log('[MENU] ✅ Modal abierto (display:flex)');
+  }
 }

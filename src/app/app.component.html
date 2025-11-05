@@ -8,7 +8,30 @@
 <app-main-maquinarias></app-main-maquinarias>
 
 <app-main-productos></app-main-productos>
-<app-form></app-form>
+
 <app-main-footer></app-main-footer>
 
 <router-outlet></router-outlet>
+
+<button
+  style="
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    background: #00bfa6;
+    color: #fff;
+  "
+  class="btn-flotante-contacto"
+  (click)="openContacto()"
+>
+  ✉
+  <span class="tooltip-text">Cotizar</span>
+</button>
+
+<div id="contactoModal" class="modal-overlay" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeModal()">×</button>
+    <app-form></app-form>
+  </div>
+</div>

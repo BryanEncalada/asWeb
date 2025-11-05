@@ -61,3 +61,5 @@ For more information on using the Angular CLI, including detailed command refere
 ng build --configuration production
 
 emailjs
+
+https://dashboard.emailjs.com/admin/templates

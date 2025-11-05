@@ -1,5 +1,5 @@
-<h1 class="form-heading">COTIZAR</h1>
-<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+<form *ngIf="!enviado" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <h1 class="form-heading">COTIZAR</h1>
   <div class="container-fluid">
     <!-- 1) Empresa (col-12) -->
     <div class="row g-3">
@@ -22,13 +22,20 @@
     <div class="row g-3">
       <div class="col-12">
         <label class="form-label required" for="sector">Sector</label>
-        <select id="sector" class="form-select" formControlName="sector">
+        <!-- <select id="sector" class="form-select" formControlName="sector">
           <option value="" disabled selected>Seleccionar</option>
           <option *ngFor="let s of sectores" [value]="s">{{ s }}</option>
         </select>
         <div class="invalid-msg" *ngIf="hasErr('sector')">
           Selecciona un sector.
-        </div>
+        </div> -->
+        <input
+          id="sector"
+          type="text"
+          class="form-control"
+          placeholder="Dirección"
+          formControlName="sector"
+        />
       </div>
     </div>
 
@@ -171,6 +178,44 @@
     </div>
   </div>
   <div class="col-12 col-md-12 text-md-end mt-3 mt-md-0">
-    <button type="submit" class="btn btn-enviar">ENVIAR</button>
+    <button type="submit" class="btn btn-enviar">
+      {{ loading ? "Enviando…" : "ENVIAR" }}
+    </button>
   </div>
 </form>
+
+<div *ngIf="enviado" class="confirmacion text-center">
+  <img
+    src="assets/images/navbar/Logo.webp"
+    alt="Confirmación"
+    class="img-fluid"
+  />
+  <p class="mt-3">
+    ¡Gracias por confiar en los expertos!<br />
+    Nos comunicaremos contigo lo más pronto posible.
+  </p>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="120"
+    height="120"
+    viewBox="0 0 120 120"
+    fill="none"
+  >
+    <circle
+      cx="60"
+      cy="60"
+      r="50"
+      stroke="#00FF6A"
+      stroke-width="6"
+      fill="none"
+    />
+    <path
+      d="M40 62 L55 77 L82 45"
+      stroke="#00FF6A"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
